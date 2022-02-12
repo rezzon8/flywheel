@@ -1055,7 +1055,7 @@ if (reversed == null) { reversed = false; }
 
 
 // stage content:
-(lib.Untitled3 = function(mode,startPosition,loop,reversed) {
+(lib.flywheel_003 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
