@@ -1792,34 +1792,6 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.Group, new cjs.Rectangle(-3.2,0.1,184.1,181.20000000000002), null);
 
 
-(lib.innerDisk = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// innerDiskRing
-	this.colorRing_mc = new lib.innerDiskRing();
-	this.colorRing_mc.name = "colorRing_mc";
-
-	this.timeline.addTween(cjs.Tween.get(this.colorRing_mc).wait(1));
-
-	// disk
-	this.disk_mc = new lib.disk();
-	this.disk_mc.name = "disk_mc";
-
-	this.timeline.addTween(cjs.Tween.get(this.disk_mc).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.innerDisk, new cjs.Rectangle(-280,-280.5,560,561.1), null);
-
-
 (lib.Group_3 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1964,7 +1936,7 @@ if (reversed == null) { reversed = false; }
 
 
 // stage content:
-(lib.flywheel_006 = function(mode,startPosition,loop,reversed) {
+(lib.flywheel_007 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -1987,72 +1959,93 @@ if (reversed == null) { reversed = false; }
 		}
 		/* Stop at This Frame */
 		
-		stop();                                               
+		stop();
 		
 		
-		/*  */
+		// VARIABLES & PROPERTIES
+		////////////////////////////////////////////////////////////////////////////////////////
+		
 		const buttons = ["pie_01", "pie_02", "pie_03", "pie_04", "pie_05", "pie_06", "pie_07", "pie_08", "pie_09"];
-		let sliceRotations = -200;
+		
+		this.innerWorkings.titles_mc.alpha = 0;
+		
+		const cogsDefaultTimeline = gsap.timeline();
+		
+		const splitPieOpenTimeline = gsap.timeline();
 		
 		
-		/* Mouse Click Handlers */
+		/* Default cog timelines */
 		
-		buttons.forEach((i) => { 
-		    this[i].addEventListener("click", clickHandler.bind(this[i]));
-		});
+		const cog_small_tl = gsap.timeline();
+		cog_small_tl
+			.to(this.cog_small, {id: "cog_small", rotation: "360", duration: 60, repeat: -1, ease:Linear.easeNone});
 		
-		gsap.to(this.innerWorkings, {rotation: "-270", duration: 0.1, ease:Linear.easeOut});
+		const cog_medium_tl = gsap.timeline();
+		cog_medium_tl
+			.to(this.cog_medium, {id: "cog_medium", rotation: "-360", duration: 40, repeat: -1, ease:Linear.easeNone});
+		
+		const cog_large_tl = gsap.timeline();
+		cog_large_tl
+			.to(this.cog_large, {id: "cog_large", rotation: "-360", duration: 120, repeat: -1, ease:Linear.easeNone});
+		
+		const innerDisk_mc_tl = gsap.timeline();
+		innerDisk_mc_tl
+			.to(this.innerDisk_mc, {id: "innerDisk_mc", rotation: "-360", duration: 5, repeat: -1, ease:Linear.easeNone});
+		
 		
 		/* Rotate continuously animation - Default starting */
 		
-		let cogsDefaultAnim = () => {
-			gsap.to(this.cog_small, {rotation: "360", duration: 60, repeat: -1, ease:Linear.easeNone});
-			gsap.to(this.cog_medium, {rotation: "-360", duration: 40, repeat: -1, ease:Linear.easeNone});
-			gsap.to(this.cog_large, {rotation: "-360", duration: 120, repeat: -1, ease:Linear.easeNone});
-			gsap.to(this.innerDisk_mc.disk_mc, {rotation: "-360", duration: 5, repeat: -1, ease:Linear.easeNone});
+		function cogsDefaultAnim() {
+			
+			/* Add cog timelines to master timeline */
+		
+			cogsDefaultTimeline.add(cog_small_tl, 0);
+			cogsDefaultTimeline.add(cog_medium_tl, 0);
+			cogsDefaultTimeline.add(cog_large_tl, 0);
+			cogsDefaultTimeline.add(innerDisk_mc_tl, 0);
+			
+			cogsDefaultTimeline.play();
 		};
 		
 		   
 		/* Coggs opening anim */
 		
 		let cogsOpenAnim = () => {
-			gsap.to(this.cog_small, {rotation: "360", duration: 40,  repeat: -1, ease:Linear.easeNone});
-			gsap.to(this.cog_medium, {rotation: "-360", duration: 20,  repeat: -1, ease:Linear.easeIn}); 
+			
+			let cog_small_ID = cogsDefaultTimeline.getById("cog_small");
+			cogsDefaultTimeline.set("cog_small", {rotation: "-360"});
 		
 			gsap.to(this.cog_large, {alpha: 0, duration: 1.8, ease:Linear.easeOut});
-			gsap.to(this.cog_large, {rotation: "-360", duration: 60, repeat: -1, ease:Linear.easeNone});
 		
-			gsap.to(this.innerDisk_mc.disk_mc, {alpha: 0, duration: 2, ease:Linear.easeOut, delay: 1});
-			gsap.to(this.innerDisk_mc.colorRing_mc, {scale: 0.8, duration: 2, ease:Linear.easeOut, tint:"0xFF0000", delay: 1});
+			gsap.to(this.innerDisk_mc, {alpha: 0, duration: 2, ease:Linear.easeOut, delay: 1});
+			gsap.to(this.colorRing_mc, {scale: 0.8, duration: 2, ease:Linear.easeOut, delay: 1});
 		
-			gsap.to(this.innerWorkings, {rotation: "-=360", duration: 2.4, ease:Linear.easeIn, delay: 1});
+			gsap.to(this.innerWorkings, {rotation: "-=360", duration: 2.4, ease:Linear.easeOut, delay: 1});
 			gsap.to(this.innerWorkings.titles_mc, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 2});
 		};
 		
 		
-		/*   */
+		// UTILITY FUNCTIONS 
+		////////////////////////////////////////////////////////////////////////////////////////
+		
+		/*  */
 		function concatSplices(index) {
 			// splice array items from index to length 
-			let tempButtons = [];	
+			let tempButtons = [];
+			
 			buttons.forEach((i) => {
 				tempButtons.push(i);
 			});
 		
-			const secondChunk = tempButtons.splice(index, tempButtons.length);
-		
-			tempButtons.forEach((j) => {
-				secondChunk.push(j);
-			});
-				 
-			// tempButtons = secondChunk.splice(index, 1);
-			// attach those before to array end
-			// buttonsSplice.push(tempButtons.splice(index, tempButtons.length));
+			tempButtons.splice(index, 1);
+							
 			
-			return secondChunk;
+			return tempButtons;
 		}
 		
 		
-		/*  */
+		// EVENT HANDLERS
+		////////////////////////////////////////////////////////////////////////////////////////
 		
 		function clickHandler() {
 			// find the index for slice clicked
@@ -2063,20 +2056,29 @@ if (reversed == null) { reversed = false; }
 			console.log(buttonsSplice);
 			
 			// loop new array and animate all other slices
-			buttonsSplice.forEach((i, j) => { 
-				gsap.to(this.parent[i], {rotation: sliceRotations, duration: 1 - (0.1 * j), ease:Linear.easeNone, delay: 0.01 * j, onComplete:() => {
-					this.parent[i].visible = false}})
+			buttonsSplice.forEach((i, j) => {
+				splitPieOpenTimeline.add(gsap.to(this.parent[i], {
+					rotation: -180 + (j * 10), duration: 1, onComplete:() => {
+						gsap.to(this.parent[i],{alpha: 0, delay:0.03 * j});
+					}
+				}), 0.1 * j);
+		
 			});
 			
 			// gsap.to(this.parent[this.name], 3, {rotation: "-360", repeat: -1, ease:Linear.easeNone});
 		
-			cogsOpenAnim();
+			splitPieOpenTimeline.play();
 		}
 		
-		this.innerWorkings.titles_mc.alpha = 0;
 		
+		// INITIALISE APP 
+		////////////////////////////////////////////////////////////////////////////////////////
 		
-		// Init
+		/* Mouse Click Handlers */
+		
+		buttons.forEach((i) => { 
+		    this[i].addEventListener("click", clickHandler.bind(this[i]));
+		});
 		
 		cogsDefaultAnim();
 	}
@@ -2133,17 +2135,25 @@ if (reversed == null) { reversed = false; }
 	this.pie_01.setTransform(315,315,1,1,0,0,0,181,281.5);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#595A59").s().p("AnBHCQi7i6AAkIQAAkHC7i7QC6i6EHAAQEHAAC7C6QC7C7AAEHQAAEIi7C6Qi7C7kHAAQkHAAi6i7g");
+	this.shape.graphics.f().s("#000000").ss(6,1,1).p("AJ9AAQAAEIi6C6Qi7C7kIAAQkHAAi6i7Qi7i6AAkIQAAkHC7i7QC6i6EHAAQEIAAC7C6QC6C7AAEHg");
 	this.shape.setTransform(314.95,315);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.pie_01},{t:this.pie_02},{t:this.pie_03},{t:this.pie_04},{t:this.pie_05},{t:this.pie_06},{t:this.pie_07},{t:this.pie_09},{t:this.pie_08}]}).wait(1));
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#DC5D2A").s().p("AnBHCQi7i6AAkIQAAkHC7i7QC6i6EHAAQEHAAC7C6QC7C7AAEHQAAEIi7C6Qi7C7kHAAQkHAAi6i7g");
+	this.shape_1.setTransform(314.95,315);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape},{t:this.pie_01},{t:this.pie_02},{t:this.pie_03},{t:this.pie_04},{t:this.pie_05},{t:this.pie_06},{t:this.pie_07},{t:this.pie_09},{t:this.pie_08}]}).wait(1));
 
 	// innerDisk
-	this.innerDisk_mc = new lib.innerDisk();
+	this.colorRing_mc = new lib.innerDiskRing();
+	this.colorRing_mc.name = "colorRing_mc";
+	this.colorRing_mc.setTransform(315,315);
+
+	this.innerDisk_mc = new lib.disk();
 	this.innerDisk_mc.name = "innerDisk_mc";
 	this.innerDisk_mc.setTransform(315,315);
 
-	this.timeline.addTween(cjs.Tween.get(this.innerDisk_mc).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.innerDisk_mc},{t:this.colorRing_mc}]}).wait(1));
 
 	// innerWorkings
 	this.innerWorkings = new lib.innerWorkings();
