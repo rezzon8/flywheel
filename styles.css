@@ -1,15 +1,41 @@
 #flywheel {
   padding: 1rem;
   font-family: "Montserrat", sans-serif;
+  min-height: 760px;
 }
 
-h1 {
+#flywheel h1 {
   position: absolute;
   left: 20px;
   top: 0;
 }
 
-#description_text_block {
+#flywheel #canvas {
+  position: absolute;
+  display: block;
+  width: 630px;
+  height: 630px;
+}
+
+#flywheel #dom_overlay_container {
+  pointer-events: none;
+  overflow: hidden;
+  width: 630px;
+  height: 630px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+#flywheel #animation_container {
+  position: absolute;
+  width: 630px;
+  height: 630px;
+  top: 80px;
+}
+
+#flywheel #description_text_block {
   width: 400px;
   background-color: white;
   position: absolute;
@@ -20,7 +46,7 @@ h1 {
   overflow-y: scroll;
 }
 
-#instructions_text_block {
+#flywheel #instructions_text_block {
   width: 350px;
   background-color: white;
   position: absolute;
@@ -34,28 +60,28 @@ h1 {
   border: 1px solid rgb(142, 142, 142);
 }
 
-#instructions_text_block > header {
+#flywheel #instructions_text_block > header {
   background-color: #dc5d2a;
   min-height: 60px;
 }
 
-#instructions_text_block > article {
+#flywheel #instructions_text_block > article {
   padding: 1rem 2rem 5px;
-  max-height: 300px;
+  max-height: 340px;
   overflow-y: scroll;
 }
 
-#instructions_text_block > article p:first-child {
+#flywheel #instructions_text_block > article p:first-child {
   margin-top: 0;
   padding-top: 0;
 }
 
-#instructions_text_block > article p:last-child {
+#flywheel #instructions_text_block > article p:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-#instructions_text_block > footer {
+#flywheel #instructions_text_block > footer {
   background-color: rgb(255, 255, 255);
   min-height: 100px;
 }
