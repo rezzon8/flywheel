@@ -2,6 +2,7 @@
   padding: 1rem;
   font-family: "Montserrat", sans-serif;
   min-height: 760px;
+  background-color: #efefef;
 }
 
 #flywheel h1 {
@@ -37,7 +38,6 @@
 
 #flywheel #description_text_block {
   width: 400px;
-  background-color: white;
   position: absolute;
   top: 150px;
   left: 20px;
@@ -56,8 +56,7 @@
   overflow-y: scroll;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  box-shadow: 0rem 1rem 1rem 0rem rgb(223, 223, 223);
-  border: 1px solid rgb(142, 142, 142);
+  box-shadow: 0rem 0.4rem 0.5rem 0rem rgb(201, 201, 201);
 }
 
 #flywheel #instructions_text_block > header {
