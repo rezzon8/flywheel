@@ -1,28 +1,42 @@
 #flywheel {
   padding: 1rem;
   font-family: "Montserrat", sans-serif;
-  min-height: 760px;
+  min-height: 860px;
   background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #flywheel h1 {
   position: absolute;
   left: 20px;
   top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #flywheel #canvas {
   position: absolute;
   display: block;
-  width: 630px;
-  height: 630px;
+  width: 740px;
+  height: 740px;
+}
+
+#flywheel canvas {
+  position: absolute;
+  display: block;
+  width: 740px;
+  height: 740px;
 }
 
 #flywheel #dom_overlay_container {
   pointer-events: none;
   overflow: hidden;
-  width: 630px;
-  height: 630px;
+  width: 740px;
+  height: 740px;
   position: absolute;
   left: 0;
   top: 0;
@@ -31,8 +45,8 @@
 
 #flywheel #animation_container {
   position: absolute;
-  width: 630px;
-  height: 630px;
+  width: 740px;
+  height: 740px;
   top: 70px;
 }
 
