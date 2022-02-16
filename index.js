@@ -2712,13 +2712,13 @@ if (reversed == null) { reversed = false; }
 	// Layer_1
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#C6C6C6").s().p("EgA/AreQgegZgDgkIgJheQh6gEh8gRIgYBbQgKAhghAVQghASgjgGQgkgHgWgcQgZgeADgjIAHhdQh6gbh0glIgoBUQgPAhgkANQgiANgjgNQgigMgSggQgSgiAHgiIAYhaQhxgvhug5Ig2BLQgUAdgnAHQgkAHgfgTQgfgRgNgjQgNglAPggIAnhUQhlhAhnhOIhBBBQgaAYglABQgmAAgbgXQgcgYgFgjQgIgnAVgdIA0hMQhbhThUhbIhMA0QgdAUglgHQgkgGgZgcQgXgbABglQAAgmAZgaIBAhBQhKhehFhtIhSAmQggAOgkgNQgjgLgSggQgTggAHgkQAIgmAcgUIBKg0Qg6htgwh1IhWAXQgjAIgigSQgfgTgNghQgMgjANgiQAMgjAhgRIBRgmQglh1gbh7IhZAHQgkACgdgYQgdgWgGglQgHgjATghQATggAjgKIBWgYQgQh9gFh6IhZgJQgkgDgZgdQgXgdAAgkQAAgjAXgdQAagdAjgDIBZgIQAFh7AQh9IhWgYQgjgKgTggQgTghAHgjQAGgkAdgXQAegZAjADIBZAIQAbh7Alh2IhRgmQgggQgNgjQgNgkAMghQANgiAfgTQAjgSAiAIIBWAXQAyh5A4hoIhKg1QgdgUgHgmQgGglASgfQARgfAkgMQAkgNAgAPIBSAlQBGhsBJhfIhAhBQgZgZAAgmQAAgmAXgbQAXgbAlgHQAmgGAcAUIBMA0QBThcBchTIg0hMQgVgeAIglQAFgkAcgYQAcgYAlABQAmAAAZAZIBBBBQBnhOBlhAIgnhUQgPggANgkQAMgjAggSQAggSAjAGQAmAHAVAdIA2BMQBug6BxgvIgXhaQgJgiATghQASghAigMQAigMAjANQAkANAPAgIAoBUQB3glB3gaIgHheQgDgjAZgeQAYgcAigGQAlgHAfATQAhATAKAjIAYBaQB0gPCCgGIAJheQADgjAegZQAcgYAjAAQAkAAAdAYQAdAZACAjIAJBeQCDAGB0APIAYhaQAKgjAggTQAggTAlAHQAjAGAXAcQAZAfgDAiIgIBeQB/AbBwAkIAohUQAQggAjgNQAigNAjAMQAiAMASAhQATAhgJAiIgYBaQB1AwBrA5IA2hMQAVgdAmgHQAjgHAgATQAgASAMAjQANAkgPAgIgnBUQBqBDBhBLIBChBQAZgZAmAAQAmAAAbAXQAcAYAGAkQAGAkgTAfIg1BMQBcBTBTBcIBMg0QAcgUAmAGQAlAHAXAbQAXAcAAAlQgBAngYAYIhABBQBPBmA/BlIBUglQAfgPAkANQAkANARAeQASAggHAkQgGAmgdAUIhKA1QA6BtAwB0IBWgXQAjgIAhASQAgASANAjQAMAhgNAkQgNAjggAQIhRAmQAlB2AbB7IBZgIQAjgDAeAZQAcAXAHAkQAGAkgSAgQgUAggiAKIhXAYQASB9AEB7IBZAIQAkADAYAdQAYAdAAAjQAAAkgYAdQgYAdgkADIhZAJQgEB6gSB9IBXAYQAiAJAUAhQASAhgGAjQgHAkgcAXQgdAYgkgCIhZgHQgbB7glB1IBRAmQAgAQANAkQANAigMAjQgNAiggASQggASgkgIIhWgXQguBwg8ByIBKA0QAcAUAHAmQAHAlgSAfQgRAfgkANQgkAMgfgOIhUgmQg/BmhPBlIBABBQAYAZABAnQAAAkgXAcQgXAcglAGQglAHgdgUIhMg0QhUBchbBSIA1BMQATAegGAmQgGAjgcAYQgbAXgmAAQgngBgYgYIhChBQhhBLhqBDIAnBUQAPAggNAlQgMAjggARQgfATgkgHQgmgHgVgdIg2hLQhrA4h1AwIAYBaQAJAigTAiQgTAgghAMQgjANgigNQgkgOgPggIgohUQh1Alh6AbIAIBdQADAjgZAeQgXAcgjAHQgkAGghgSQgggUgKgiIgYhbQh+ARh5AEIgJBeQgCAjgdAZQgdAYgkAAQgjAAgcgXg");
-	this.shape.setTransform(0,0.025);
+	this.shape.setTransform(0,0.024,0.9611,0.9611);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.disk, new cjs.Rectangle(-280,-280.5,560,561.1), null);
+}).prototype = getMCSymbolPrototype(lib.disk, new cjs.Rectangle(-269.1,-269.6,538.2,539.3), null);
 
 
 (lib.cog_small = function(mode,startPosition,loop,reversed) {
@@ -3010,6 +3010,7 @@ if (reversed == null) { reversed = false; }
 		
 		const buttons = ["pie_01", "pie_02", "pie_03", "pie_04", "pie_05", "pie_06", "pie_07", "pie_08", "pie_09"];
 		
+		this.innerWorkings.alpha = 0;
 		this.innerWorkings.titles_mc.alpha = 0;
 		
 		const cogsDefaultTimeline = gsap.timeline();
@@ -3071,10 +3072,10 @@ if (reversed == null) { reversed = false; }
 																				 
 			gsap.to(this.cog_large, {alpha: 0, duration: 1.8, ease:Linear.easeOut});
 		
-			gsap.to(this.innerDisk_mc, {alpha: 0, duration: 2, ease:Linear.easeOut, delay: 1});  
-			gsap.to(this.colorRing_mc, {scale: 0.9, duration: 0.75, ease:Linear.easeOut, delay: 3}); 
+			gsap.to(this.innerDisk_mc, {alpha: 0.4, duration: 2, ease:Linear.easeOut, delay: 1});  
+			gsap.fromTo(this.colorRing_mc, {scale: 0, alpha: 0}, {alpha:1, scale: 1.1, duration: 0.75, ease:Linear.easeOut, delay: 3}); 
 		
-			gsap.to(this.innerWorkings, {rotation: "90", duration: 2.6, ease:Linear.easeOut, delay: 0.1}); 
+			gsap.to(this.innerWorkings, {alpha: 1, rotation: "90", duration: 2, ease:Linear.easeOut, delay: 1}); 
 			gsap.to(this.innerWorkings.titles_mc, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 3});
 		
 			gsap.fromTo(this.pie_06_options_mc, {alpha: 0}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 3.2});
@@ -3151,94 +3152,97 @@ if (reversed == null) { reversed = false; }
 	// innerCogs
 	this.cog_small = new lib.cog_small();
 	this.cog_small.name = "cog_small";
-	this.cog_small.setTransform(315.55,314.85);
+	this.cog_small.setTransform(370.05,369.8,1.1815,1.1815);
 
 	this.cog_medium = new lib.cog_medium();
 	this.cog_medium.name = "cog_medium";
-	this.cog_medium.setTransform(315,315);
+	this.cog_medium.setTransform(369.35,370,1.1815,1.1815);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.cog_medium},{t:this.cog_small}]}).wait(1));
 
 	// pieSlices
 	this.pie_08 = new lib.pie_08();
 	this.pie_08.name = "pie_08";
-	this.pie_08.setTransform(315,315,1,1,0,0,0,0,215.7);
+	this.pie_08.setTransform(369.45,370.05,1.1815,1.1815,0,0,0,0.1,215.8);
 
 	this.pie_09 = new lib.pie_09();
 	this.pie_09.name = "pie_09";
-	this.pie_09.setTransform(314.95,315);
+	this.pie_09.setTransform(369.35,370,1.1815,1.1815,0,0,0,0.1,0);
 
 	this.pie_07 = new lib.pie_07();
 	this.pie_07.name = "pie_07";
-	this.pie_07.setTransform(315,315,1,1,0,0,0,0,49);
+	this.pie_07.setTransform(369.45,370,1.1815,1.1815,0,0,0,0.1,49);
 
 	this.pie_06 = new lib.pie_06();
 	this.pie_06.name = "pie_06";
-	this.pie_06.setTransform(315,315);
+	this.pie_06.setTransform(369.35,370,1.1815,1.1815);
 
 	this.pie_05 = new lib.pie_05();
 	this.pie_05.name = "pie_05";
-	this.pie_05.setTransform(314.95,315,1,1,0,0,0,96,0);
+	this.pie_05.setTransform(369.3,370,1.1815,1.1815,0,0,0,96,0);
 
 	this.pie_04 = new lib.pie_04();
 	this.pie_04.name = "pie_04";
-	this.pie_04.setTransform(315.05,315,1,1,0,0,0,243.7,0);
+	this.pie_04.setTransform(369.35,370,1.1815,1.1815,0,0,0,243.7,0);
 
 	this.pie_03 = new lib.pie_03();
 	this.pie_03.name = "pie_03";
-	this.pie_03.setTransform(315.05,315.05,1,1,0,0,0,281.6,48.6);
+	this.pie_03.setTransform(369.4,370,1.1815,1.1815,0,0,0,281.6,48.6);
 
 	this.pie_02 = new lib.pie_02();
 	this.pie_02.name = "pie_02";
-	this.pie_02.setTransform(314.95,315,1,1,0,0,0,277.2,215.4);
+	this.pie_02.setTransform(369.4,370.05,1.1815,1.1815,0,0,0,277.3,215.5);
 
 	this.pie_01 = new lib.pie_01();
 	this.pie_01.name = "pie_01";
-	this.pie_01.setTransform(315,315,1,1,0,0,0,181,281.5);
+	this.pie_01.setTransform(369.45,370.05,1.1815,1.1815,0,0,0,181.1,281.6);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.pie_01},{t:this.pie_02},{t:this.pie_03},{t:this.pie_04},{t:this.pie_05},{t:this.pie_06},{t:this.pie_07},{t:this.pie_09},{t:this.pie_08}]}).wait(1));
 
-	// innerDisk
-	this.colorRing_mc = new lib.innerDiskRing();
-	this.colorRing_mc.name = "colorRing_mc";
-	this.colorRing_mc.setTransform(315,315);
-
-	this.innerDisk_mc = new lib.disk();
-	this.innerDisk_mc.name = "innerDisk_mc";
-	this.innerDisk_mc.setTransform(315,315);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.innerDisk_mc},{t:this.colorRing_mc}]}).wait(1));
-
-	// Layer_1
+	// orange_options
 	this.pie_06_options_mc = new lib.pie_06_options_mc();
 	this.pie_06_options_mc.name = "pie_06_options_mc";
-	this.pie_06_options_mc.setTransform(314.9,297.8);
+	this.pie_06_options_mc.setTransform(369.3,349.75,1.1815,1.1815,0,0,0,0.1,0.1);
 
 	this.timeline.addTween(cjs.Tween.get(this.pie_06_options_mc).wait(1));
+
+	// orange_ring
+	this.colorRing_mc = new lib.innerDiskRing();
+	this.colorRing_mc.name = "colorRing_mc";
+	this.colorRing_mc.setTransform(369.35,370,1.1815,1.1815);
+
+	this.timeline.addTween(cjs.Tween.get(this.colorRing_mc).wait(1));
 
 	// innerWorkings
 	this.innerWorkings = new lib.innerWorkings();
 	this.innerWorkings.name = "innerWorkings";
-	this.innerWorkings.setTransform(313.3,315.2,0.9133,0.9133,89.9933,0,0,0.2,0);
+	this.innerWorkings.setTransform(367.45,370.3,1.079,1.079,89.9935,0,0,0.3,-0.1);
 
 	this.timeline.addTween(cjs.Tween.get(this.innerWorkings).wait(1));
+
+	// innerDisk
+	this.innerDisk_mc = new lib.disk();
+	this.innerDisk_mc.name = "innerDisk_mc";
+	this.innerDisk_mc.setTransform(369.35,370,1.1815,1.1815);
+
+	this.timeline.addTween(cjs.Tween.get(this.innerDisk_mc).wait(1));
 
 	// mainCog
 	this.cog_large = new lib.cog_large();
 	this.cog_large.name = "cog_large";
-	this.cog_large.setTransform(315,315);
+	this.cog_large.setTransform(369.35,370,1.1815,1.1815);
 
 	this.timeline.addTween(cjs.Tween.get(this.cog_large).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(311.7,308.5,321.7,328);
+p.nominalBounds = new cjs.Rectangle(363.3,360.2,382.2,389.7);
 // library properties:
 lib.properties = {
 	id: '1392B8D961C3473EADEDBB5D2A770B98',
-	width: 630,
-	height: 630,
+	width: 740,
+	height: 740,
 	fps: 25,
 	color: "#FFFFFF",
 	opacity: 1.00,
