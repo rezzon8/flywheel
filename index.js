@@ -5045,7 +5045,7 @@ if (reversed == null) { reversed = false; }
 	this.shape_36.setTransform(133.6813,92.5);
 
 	this.shape_37 = new cjs.Shape();
-	this.shape_37.graphics.f("#D9317B").s().p("A1/nJMArTgHqQBXHohWHpQhWHoj4Gug");
+	this.shape_37.graphics.f("#D9317B").s().p("A1/nJMArTgHqQBXHohWHoQhWHpj4Gug");
 	this.shape_37.setTransform(140.7688,94.8);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_37},{t:this.shape_36},{t:this.shape_35},{t:this.shape_34},{t:this.shape_33},{t:this.shape_32},{t:this.shape_31},{t:this.shape_30},{t:this.shape_29},{t:this.shape_28},{t:this.shape_27},{t:this.shape_26},{t:this.shape_25},{t:this.shape_24},{t:this.shape_23},{t:this.shape_22},{t:this.shape_21},{t:this.shape_20},{t:this.shape_19},{t:this.shape_18},{t:this.shape_17},{t:this.shape_16},{t:this.shape_15},{t:this.shape_14},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
@@ -5335,11 +5335,11 @@ if (reversed == null) { reversed = false; }
 	this.shape_39.setTransform(88.175,176.05);
 
 	this.shape_40 = new cjs.Shape();
-	this.shape_40.graphics.f("#AEAEAE").s().p("AuQSYMAOQgnQMAORAnQQm6ChnXAAQnVAAm7ihg");
+	this.shape_40.graphics.f("#AEAEAE").s().p("AuQSYMAOQgnQMAORAnQQm6ChnXAAQnWAAm6ihg");
 	this.shape_40.setTransform(96.1,133.675);
 
 	this.shape_41 = new cjs.Shape();
-	this.shape_41.graphics.f("#E5C843").s().p("AvATXMAPAgpVMAPBApUQnRCqnwAAQnugBnSiog");
+	this.shape_41.graphics.f("#E5C843").s().p("AvATXMAPAgpWMAPBApVQnRCqnwAAQnuAAnSipg");
 	this.shape_41.setTransform(96.125,140.75);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_41},{t:this.shape_40},{t:this.shape_39},{t:this.shape_38},{t:this.shape_37},{t:this.shape_36},{t:this.shape_35},{t:this.shape_34},{t:this.shape_33},{t:this.shape_32},{t:this.shape_31},{t:this.shape_30},{t:this.shape_29},{t:this.shape_28},{t:this.shape_27},{t:this.shape_26},{t:this.shape_25},{t:this.shape_24},{t:this.shape_23},{t:this.shape_22},{t:this.shape_21},{t:this.shape_20},{t:this.shape_19},{t:this.shape_18},{t:this.shape_17},{t:this.shape_16},{t:this.shape_15},{t:this.shape_14},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
@@ -5498,7 +5498,7 @@ if (reversed == null) { reversed = false; }
 	this.shape_33.setTransform(127.95,125.6);
 
 	this.shape_34 = new cjs.Shape();
-	this.shape_34.graphics.f("#A8CE60").s().p("ApNNDQl8k/j4msMAmDgWBMgPDApUQnRiql7k+g");
+	this.shape_34.graphics.f("#A8CE60").s().p("ApNNDQl8k/j4msMAmDgWCMgPDApVQnRiql7k+g");
 	this.shape_34.setTransform(121.825,132.25);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_34},{t:this.shape_33},{t:this.shape_32},{t:this.shape_31},{t:this.shape_30},{t:this.shape_29},{t:this.shape_28},{t:this.shape_27},{t:this.shape_26},{t:this.shape_25},{t:this.shape_24},{t:this.shape_23},{t:this.shape_22},{t:this.shape_21},{t:this.shape_20},{t:this.shape_19},{t:this.shape_18},{t:this.shape_17},{t:this.shape_16},{t:this.shape_15},{t:this.shape_14},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
@@ -5613,7 +5613,7 @@ if (reversed == null) { reversed = false; }
 	this.shape_22.setTransform(147.8624,92.3);
 
 	this.shape_23 = new cjs.Shape();
-	this.shape_23.graphics.f("#A6C23C").s().p("A1TAeQhXnnBWnpMArUAHmMgmFAV/Qj4muhWnng");
+	this.shape_23.graphics.f("#A6C23C").s().p("A1TAdQhXnnBWnoMArUAHmMgmFAV+Qj4mshWnpg");
 	this.shape_23.setTransform(140.7749,94.65);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_23},{t:this.shape_22},{t:this.shape_21},{t:this.shape_20},{t:this.shape_19},{t:this.shape_18},{t:this.shape_17},{t:this.shape_16},{t:this.shape_15},{t:this.shape_14},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
@@ -5744,7 +5744,7 @@ if (reversed == null) { reversed = false; }
 	this.shape_26.setTransform(145.6,113.1);
 
 	this.shape_27 = new cjs.Shape();
-	this.shape_27.graphics.f("#4BA39C").s().p("A1pJMQBWnoD3msQD4mtF7k/MAcTAhpg");
+	this.shape_27.graphics.f("#4BA39C").s().p("A1pJNQBWnpD3msQD4mtF7k/MAcTAhpg");
 	this.shape_27.setTransform(138.625,107.7);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_27},{t:this.shape_26},{t:this.shape_25},{t:this.shape_24},{t:this.shape_23},{t:this.shape_22},{t:this.shape_21},{t:this.shape_20},{t:this.shape_19},{t:this.shape_18},{t:this.shape_17},{t:this.shape_16},{t:this.shape_15},{t:this.shape_14},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
@@ -5927,7 +5927,7 @@ if (reversed == null) { reversed = false; }
 	this.shape_39.setTransform(95.05,147.825);
 
 	this.shape_40 = new cjs.Shape();
-	this.shape_40.graphics.f("#4394CF").s().p("AuIrsQF7k+HSiqQHQiqHwgBMAAEAr/g");
+	this.shape_40.graphics.f("#4394CF").s().p("AuIrsQF7k+HSiqQHQipHwgCMAAEAr/g");
 	this.shape_40.setTransform(90.5,140.75);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_40},{t:this.shape_39},{t:this.shape_38},{t:this.shape_37},{t:this.shape_36},{t:this.shape_35},{t:this.shape_34},{t:this.shape_33},{t:this.shape_32},{t:this.shape_31},{t:this.shape_30},{t:this.shape_29},{t:this.shape_28},{t:this.shape_27},{t:this.shape_26},{t:this.shape_25},{t:this.shape_24},{t:this.shape_23},{t:this.shape_22},{t:this.shape_21},{t:this.shape_20},{t:this.shape_19},{t:this.shape_18},{t:this.shape_17},{t:this.shape_16},{t:this.shape_15},{t:this.shape_14},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
@@ -8776,6 +8776,37 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	this.isSingleFrame = false;
+	// timeline functions:
+	this.frame_0 = function() {
+		if(this.isSingleFrame) {
+			return;
+		}
+		if(this.totalFrames == 1) {
+			this.isSingleFrame = true;
+		}
+		/* Mouse Click Event
+		Clicking on the specified symbol instance executes a function in which you can add your own custom code.
+		
+		Instructions:
+		1. Add your custom code on a new line after the line that says "// Start your custom code" below.
+		The code will execute when the symbol instance is clicked.
+		*/
+		
+		this["orange_start_01"].addEventListener("click", clickHandler.bind(this));
+		
+		function clickHandler()
+		{
+			// Start your custom code
+			// This example code displays the words "Mouse clicked" in the Output panel.
+			alert(this.name);
+			// End your custom code
+		}
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
 	// Layer_1
 	this.orange_stop_02 = new lib.orange_stop_02();
 	this.orange_stop_02.name = "orange_stop_02";
@@ -9156,8 +9187,16 @@ if (reversed == null) { reversed = false; }
 		this.innerWorkings.titles_mc.alpha = 0;
 		
 		const cogsDefaultTimeline = gsap.timeline();
+		const splitPieOpenTimeline = gsap.timeline();  
 		
-		const splitPieOpenTimeline = gsap.timeline();
+		const cog_small_tl = gsap.timeline();
+		const cog_medium_tl = gsap.timeline();
+		const cog_large_tl = gsap.timeline();
+		const innerDisk_mc_tl = gsap.timeline({paused: true});
+		
+		const orangeArea_tl = gsap.timeline({paused: true});
+		const tealArea_tl = gsap.timeline({paused: true});
+		const purpleArea_tl = gsap.timeline({paused: true});
 		
 		
 		////////////////////////////////////////////////////////////////////////////////////////
@@ -9165,24 +9204,21 @@ if (reversed == null) { reversed = false; }
 		////////////////////////////////////////////////////////////////////////////////////////
 		
 		/* Default cog timelines */
-		
-		const cog_small_tl = gsap.timeline();
 		cog_small_tl
 			.to(this.cog_small, {id: "cog_small", rotation: "360", duration: 60, repeat: -1, ease:Linear.easeNone});
 		
-		const cog_medium_tl = gsap.timeline();
 		cog_medium_tl
 			.to(this.cog_medium, {id: "cog_medium", rotation: "360", duration: 40, repeat: -1, ease:Linear.easeNone});
 		
-		const cog_large_tl = gsap.timeline();
 		cog_large_tl
 			.to(this.cog_large, {id: "cog_large", rotation: "360", duration: 120, repeat: -1, ease:Linear.easeNone});
 		
-		const innerDisk_mc_tl = gsap.timeline();
 		innerDisk_mc_tl
 			.to(this.innerDisk_mc, {id: "innerDisk_mc", rotation: "360", duration: 5, repeat: -1, ease:Linear.easeNone});
 		
 		gsap.to(this.innerWorkings, {rotation: "-270"});
+		
+		gsap.to("#instructions_text_block", {"right": '-350px'});
 		
 		
 		////////////////////////////////////////////////////////////////////////////////////////
@@ -9192,7 +9228,6 @@ if (reversed == null) { reversed = false; }
 		/* Rotate continuously animation - Default starting */
 		
 		function playCogsDefaultAnim() {
-			
 			/* 
 				Add cog timelines to master timeline - 
 				starting at the same time
@@ -9210,10 +9245,7 @@ if (reversed == null) { reversed = false; }
 		/* Coggs opening anim */
 		
 		const cogsOpenAnim = (areaColor) => {
-			
-																				 
 			gsap.to(this.cog_large, {alpha: 0, duration: 1.8, ease:Linear.easeOut});
-		
 			gsap.to(this.innerDisk_mc, {alpha: 0, duration: 2, ease:Linear.easeOut, delay: 1});  
 			
 			if (areaColor === "orange") {
@@ -9233,7 +9265,6 @@ if (reversed == null) { reversed = false; }
 			gsap.to(this.innerWorkings, {alpha: 1, rotation: "90", duration: 2, ease:Linear.easeOut, delay: 1}); 
 			gsap.to(this.innerWorkings.titles_mc, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 3});
 		
-		
 			buttons.forEach((i, j) => { 
 				gsap.to(this[i], {alpha: 0, duration: 1.2, ease:Linear.easeOut, delay: 1});
 			});
@@ -9244,27 +9275,39 @@ if (reversed == null) { reversed = false; }
 		/* Orange area anim */
 		
 		const animateAreaOrange = () => {
-			gsap.fromTo(this.ringOrange_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 0.75, ease:Linear.easeOut, delay: 2});
-			gsap.fromTo(this.optionsOrange_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2});
-			gsap.fromTo(this.circles_mc.orangeCircle_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2});
+			orangeArea_tl
+				.fromTo(this.ringOrange_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 0.75, ease:Linear.easeOut, delay: 2}, 0)
+				.fromTo(this.optionsOrange_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0)
+				.fromTo(this.circles_mc.orangeCircle_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0);
+			
+			//
+			orangeArea_tl.play();
 		};
 		
 		   
 		/* Teal area anim */
 		
 		const animateAreaTeal = () => {
-			gsap.fromTo(this.ringTeal_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 0.75, ease:Linear.easeOut, delay: 2});
-			gsap.fromTo(this.optionsTeal_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2});
-			gsap.fromTo(this.circles_mc.tealCircle_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2});
+			tealArea_tl
+				.fromTo(this.ringTeal_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 0.75, ease:Linear.easeOut, delay: 2}, 0)
+				.fromTo(this.optionsTeal_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0)
+				.fromTo(this.circles_mc.tealCircle_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0);
+			
+			//
+			tealArea_tl.play();
 		};
 		
 		
 		/* Purple area anim */
 		
 		const animateAreaPurple = () => {
-			gsap.fromTo(this.ringPurple_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 0.75, ease:Linear.easeOut, delay: 2}); 
-			gsap.fromTo(this.optionsPurple_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2});
-			gsap.fromTo(this.circles_mc.purpleCircle_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2});
+			purpleArea_tl
+				.fromTo(this.ringPurple_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 0.75, ease:Linear.easeOut, delay: 2}, 0) 
+				.fromTo(this.optionsPurple_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0)
+				.fromTo(this.circles_mc.purpleCircle_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0);
+			
+			//
+			purpleArea_tl.play();
 		};
 		
 		
@@ -9291,13 +9334,12 @@ if (reversed == null) { reversed = false; }
 		// EVENT HANDLERS
 		////////////////////////////////////////////////////////////////////////////////////////
 		
-		function clickHandler() {
+		function clickHandler() {                          
+		
 			// find the index for slice clicked
 			const index = buttons.findIndex(button => button === this.name);
-			
+			//
 			const buttonsSplice = concatSplices(index);
-			
-			console.log(buttonsSplice);
 			
 			// loop new array and animate all other slices
 			buttonsSplice.forEach((i, j) => {
@@ -9309,10 +9351,11 @@ if (reversed == null) { reversed = false; }
 						}
 					}), 0.1 * j);
 					//
-					cogsOpenAnim(this.data.area);
+					cogsOpenAnim(this.data.area);               
+		
+					// calls a function in the script tag in the html
+					animateArea(this.data.area);
 				}
-												
-					this.parent.setChildIndex( this.parent.pie_04, this.parent.getNumChildren()-1)
 			});
 		}
 		

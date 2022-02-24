@@ -1,13 +1,36 @@
-{
-  "areaColors": [
-    "darkblue",
-    "purple",
-    "pink",
-    "orange",
-    "yellow",
-    "lime",
-    "green",
-    "teal",
-    "skyblue"
-  ]
-}
+[
+  {
+    "areaColors": {
+      "darkblue": "#326A94",
+      "purple": "#733B9C",
+      "pink": "#D9317B",
+      "orange": "#DC5D2A",
+      "yellow": "#E5C843",
+      "lime": "#A8CE60",
+      "green": "#A6C23C",
+      "teal": "#4BA39C",
+      "skyblue": "#4394CF"
+    },
+    "titles": {
+      "darkblue": "Improve reliability and quality of data",
+      "purple": "Use data to gain insight into users",
+      "pink": "Use data to improve operational processes",
+      "orange": "Grow a learning culture",
+      "yellow": "Use experimentation to inform decision making",
+      "line": "Embed UX design and research practices",
+      "green": "Accelerate time to market",
+      "teal": "Increase service reliability",
+      "skyblue": "Understand user needs to increase engagement"
+    },
+    "content": {
+      "orange": {
+        "start": [
+          "<h1>Agile as a toolkit</h1><h4>Agile as a toolkit</h4><p>lol</p>",
+          "Services Catalogue"
+        ],
+        "consider": [],
+        "stop": []
+      }
+    }
+  }
+]
