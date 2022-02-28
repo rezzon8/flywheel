@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 #flywheel > h1:first-child {
