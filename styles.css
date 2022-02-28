@@ -82,7 +82,7 @@
 
 #flywheel #instructions_text_block > article {
   padding: 1rem 2rem 5px;
-  max-height: 340px;
+  height: 424px;
   overflow-y: auto;
 }
 
@@ -98,5 +98,5 @@
 
 #flywheel #instructions_text_block > footer {
   background-color: rgb(255, 255, 255);
-  min-height: 100px;
+  min-height: 80px;
 }

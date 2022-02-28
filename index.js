@@ -8377,14 +8377,69 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FFFFFF").s().p("AgxUvQgXgTgCgcIgakOQhLgHhKgTIh0D1QgMAZgcAKQgaAKgbgKQgbgKgOgYQgPgZAHgcIBFkGQhFghg/grIjBC+QgUAUgdAAQgcAAgWgSQgWgTgFgcQgFgcAQgYICajfQg3g4grg9Ij2BxQgaAMgbgKQgbgJgOgZQgPgZAGgcQAFgdAXgQIDdidQghhHgThIIkOAWQgdACgWgTQgWgSgFgcQgFgdAPgYQAOgZAbgIIEGhIQgDgzAAgZQAAgYADgzIkGhIQgbgIgOgZQgPgYAFgdQAFgcAWgSQAXgSAcACIEOAVQAUhJAghGIjdidQgXgQgFgdQgGgcAPgZQAOgZAbgJQAbgKAaAMID2BxQApg6A5g7IiajfQgQgXAFgdQAFgcAWgTQAWgSAcAAQAdAAAUAUIDBC+QBAgrBEghIhFkGQgHgcAPgZQAOgYAbgKQAbgKAaAKQAcAKAMAZIB0D1QBKgTBLgHIAakOQACgcAXgTQAVgSAcAAQAdAAAWASQAWATACAcIAaEOQBLAHBKATIB1j1QAMgZAbgKQAagKAbAKQAcAKAOAYQAOAZgHAcIhEEGQBEAhA/ArIDBi+QAUgUAdAAQAcAAAWASQAXATAEAcQAFAcgQAYIiaDfQA3A4ArA9ID2hxQAagMAbAKQAbAJAOAZQAPAZgFAcQgGAdgXAQIjcCdQAfBGAVBJIEOgVQAcgCAWASQAWASAFAcQAFAdgPAYQgOAZgbAIIkGBIQADAmAAAlQAAAmgDAmIEGBIQAbAIAOAZQAPAYgFAdQgFAcgWASQgWASgcgCIkOgVQgVBIgfBHIDcCdQAXAQAGAdQAFAcgPAZQgOAZgbAJQgbAKgagMIj2hxQgtA/g1A2ICaDfQAQAYgFAcQgEAcgXATQgWASgcAAQgdAAgUgUIjBi+Qg+AqhFAiIBEEGQAHAcgOAZQgOAYgcAKQgbAKgagKQgbgKgMgZIh1j1QhKAThLAHIgaEOQgCAcgWATQgWASgdAAQgcAAgVgSgAnFm0Qi6C7AAEGQAAA8AKA4QAgC+CQCPQBTBTBiAvQB6A4CSAAQEGAAC6i6QC7i6AAkHQAAkGi7i7Qi6i6kGAAQkHAAi6C6g");
-	this.shape.setTransform(132.375,134.525);
+	this.shape.graphics.f("#FFFFFF").s().p("AgxUvQgXgTgCgcIgakOQhLgHhKgTIh0D1QgMAZgcAKQgaAKgbgKQgbgKgOgYQgPgZAHgcIBFkGQhFghg/grIjBC+QgUAUgdAAQgcAAgWgSQgWgTgFgcQgFgcAQgYICajfQg3g4grg9Ij2BxQgaAMgbgKQgbgJgOgZQgPgZAGgcQAFgdAXgQIDdidQghhHgThIIkOAWQgdACgWgTQgWgSgFgcQgFgdAPgYQAOgZAbgIIEGhIQgDgzAAgZQAAgYADgzIkGhIQgbgIgOgZQgPgYAFgdQAFgcAWgSQAXgSAcACIEOAVQAUhJAghGIjdidQgXgQgFgdQgGgcAPgZQAOgZAbgJQAbgKAaAMID2BxQApg6A5g7IiajfQgQgXAFgdQAFgcAWgTQAWgSAcAAQAdAAAUAUIDBC+QBAgrBEghIhFkGQgHgcAPgZQAOgYAbgKQAbgKAaAKQAcAKAMAZIB0D1QBKgTBLgHIAakOQACgcAXgTQAVgSAcAAQAdAAAWASQAWATACAcIAaEOQBLAHBKATIB1j1QAMgZAbgKQAagKAbAKQAcAKAOAYQAOAZgHAcIhEEGQBEAhA/ArIDBi+QAUgUAdAAQAcAAAWASQAXATAEAcQAFAcgQAYIiaDfQA3A4ArA9ID2hxQAagMAbAKQAbAJAOAZQAPAZgFAcQgGAdgXAQIjcCdQAfBGAVBJIEOgVQAcgCAWASQAWASAFAcQAFAdgPAYQgOAZgbAIIkGBIQADAmAAAlQAAAmgDAmIEGBIQAbAIAOAZQAPAYgFAdQgFAcgWASQgWASgcgCIkOgVQgVBIgfBHIDcCdQAXAQAGAdQAFAcgPAZQgOAZgbAJQgbAKgagMIj2hxQgtA/g1A2ICaDfQAQAYgFAcQgEAcgXATQgWASgcAAQgdAAgUgUIjBi+Qg+AqhFAiIBEEGQAHAcgOAZQgOAYgcAKQgbAKgagKQgbgKgMgZIh1j1QhKAThLAHIgaEOQgCAcgWATQgWASgdAAQgcAAgVgSg");
+	this.shape.setTransform(0.025,0.025);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Group_1, new cjs.Rectangle(0,0,264.8,269.1), null);
+}).prototype = getMCSymbolPrototype(lib.Group_1, new cjs.Rectangle(-132.4,-134.5,264.9,269.1), null);
+
+
+(lib.thePie_mc = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.pie_01 = new lib.pie_09();
+	this.pie_01.name = "pie_01";
+	this.pie_01.setTransform(0,0.05,1.1815,1.1815,0,0,0,0.1,0);
+
+	this.pie_02 = new lib.pie_08();
+	this.pie_02.name = "pie_02";
+	this.pie_02.setTransform(0.1,0.1,1.1815,1.1815,0,0,0,0.1,215.8);
+
+	this.pie_03 = new lib.pie_07();
+	this.pie_03.name = "pie_03";
+	this.pie_03.setTransform(0.1,0.05,1.1815,1.1815,0,0,0,0.1,49);
+
+	this.pie_04 = new lib.pie_06();
+	this.pie_04.name = "pie_04";
+	this.pie_04.setTransform(0,0.05,1.1815,1.1815);
+
+	this.pie_05 = new lib.pie_05();
+	this.pie_05.name = "pie_05";
+	this.pie_05.setTransform(-0.05,0.05,1.1815,1.1815,0,0,0,96,0);
+
+	this.pie_06 = new lib.pie_04();
+	this.pie_06.name = "pie_06";
+	this.pie_06.setTransform(0,0.05,1.1815,1.1815,0,0,0,243.7,0);
+
+	this.pie_07 = new lib.pie_03();
+	this.pie_07.name = "pie_07";
+	this.pie_07.setTransform(0.05,0.05,1.1815,1.1815,0,0,0,281.6,48.6);
+
+	this.pie_08 = new lib.pie_02();
+	this.pie_08.name = "pie_08";
+	this.pie_08.setTransform(0.05,0.1,1.1815,1.1815,0,0,0,277.3,215.5);
+
+	this.pie_09 = new lib.pie_01();
+	this.pie_09.name = "pie_09";
+	this.pie_09.setTransform(0.1,0.1,1.1815,1.1815,0,0,0,181.1,281.6);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.pie_09},{t:this.pie_08},{t:this.pie_07},{t:this.pie_06},{t:this.pie_05},{t:this.pie_04},{t:this.pie_03},{t:this.pie_02},{t:this.pie_01}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.thePie_mc, new cjs.Rectangle(-332.6,-332.6,665.3,665.3), null);
 
 
 (lib.optionsTeal_mc = function(mode,startPosition,loop,reversed) {
@@ -8397,6 +8452,48 @@ if (reversed == null) { reversed = false; }
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
+
+	this.isSingleFrame = false;
+	// timeline functions:
+	this.frame_0 = function() {
+		if(this.isSingleFrame) {
+			return;
+		}
+		if(this.totalFrames == 1) {
+			this.isSingleFrame = true;
+		}
+		stop();
+		
+		for (let i = 1; i <= 8; i++) {
+			this["teal_start_0" + i].addEventListener("click", clickHandler.bind(this));
+		
+			function clickHandler(event) {
+				// calls a function in the script tag in the html
+				animateArea("teal", "start", i - 1);
+			}
+		}
+		
+		for (let i = 1; i <= 3; i++) {
+			this["teal_consider_0" + i].addEventListener("click", clickHandler.bind(this));
+		
+			function clickHandler(event) {
+				// calls a function in the script tag in the html
+				animateArea("teal", "consider", i - 1);
+			}
+		}
+		
+		for (let i = 1; i <= 6; i++) {
+			this["teal_stop_0" + i].addEventListener("click", clickHandler.bind(this));
+		
+			function clickHandler(event) {
+				// calls a function in the script tag in the html
+				animateArea("teal", "stop", i - 1);
+			}
+		}
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Layer_1
 	this.teal_stop_06 = new lib.teal_stop_06();
@@ -8606,6 +8703,39 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	this.isSingleFrame = false;
+	// timeline functions:
+	this.frame_0 = function() {
+		if(this.isSingleFrame) {
+			return;
+		}
+		if(this.totalFrames == 1) {
+			this.isSingleFrame = true;
+		}
+		stop();
+		
+		for (let i = 1; i <= 4; i++) {
+			this["purple_start_0" + i].addEventListener("click", clickHandler.bind(this));
+		
+			function clickHandler(event) {
+				// calls a function in the script tag in the html
+				animateArea("purple", "start", i - 1);
+			}
+		}
+		
+		for (let i = 1; i <= 3; i++) {
+			this["purple_stop_0" + i].addEventListener("click", clickHandler.bind(this));
+		
+			function clickHandler(event) {
+				// calls a function in the script tag in the html
+				animateArea("purple", "stop", i - 1);
+			}
+		}
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
 	// Layer_1
 	this.purple_stop_03 = new lib.purple_stop_03();
 	this.purple_stop_03.name = "purple_stop_03";
@@ -8785,22 +8915,33 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
-		/* Mouse Click Event
-		Clicking on the specified symbol instance executes a function in which you can add your own custom code.
+		stop();
 		
-		Instructions:
-		1. Add your custom code on a new line after the line that says "// Start your custom code" below.
-		The code will execute when the symbol instance is clicked.
-		*/
+		for (let i = 1; i <= 7; i++) {
+			this["orange_start_0" + i].addEventListener("click", clickHandler.bind(this));
 		
-		this["orange_start_01"].addEventListener("click", clickHandler.bind(this));
+			function clickHandler(event) {
+				// calls a function in the script tag in the html
+				animateArea("orange", "start", i - 1);
+			}
+		}
 		
-		function clickHandler()
-		{
-			// Start your custom code
-			// This example code displays the words "Mouse clicked" in the Output panel.
-			alert(this.name);
-			// End your custom code
+		for (let i = 1; i <= 4; i++) {
+			this["orange_consider_0" + i].addEventListener("click", clickHandler.bind(this));
+		
+			function clickHandler(event) {
+				// calls a function in the script tag in the html
+				animateArea("orange", "consider", i - 1);
+			}
+		}
+		
+		for (let i = 1; i <= 2; i++) {
+			this["orange_stop_0" + i].addEventListener("click", clickHandler.bind(this));
+		
+			function clickHandler(event) {
+				// calls a function in the script tag in the html
+				animateArea("orange", "stop", i - 1);
+			}
 		}
 	}
 
@@ -9035,18 +9176,18 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.instance = new lib.Group_1();
-	this.instance.setTransform(-0.05,0,1,1,0,0,0,132.3,134.5);
+	this.instance.setTransform(132.25,134.45,1,1,0,0,0,132.3,134.5);
 	this.instance.alpha = 0.1797;
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#767778").ss(2.8).p("AFgq1QgQgIgFgRQgFgRAIgPQAIgQARgFQAQgGAQAIQAQAJAFAQQAFARgIAQQgFAKgLAHQgKAGgMAAQgKAAgJgFgAIOo7QgNgMgBgRQAAgSAMgNQAMgNARAAQASgBANAMQANAMAAASQABASgMAMQgMAOgTAAQgRAAgMgMgACYr8QgSgDgJgPQgKgPAEgRQADgRAPgKQAOgKASAEQARAEAKAOQAKAPgEARQgDAPgMAKQgMAJgPAAgAKUmWQgJgPAEgRQAEgRAPgJQAQgKARAFQARAEAJAPQAJAPgEARQgEARgPAJQgLAGgLAAQgZAAgMgUgAMHAAIAAgBQAAgRAMgNQANgMARgBQASAAAMANQANAMAAASIAAABQAAARgNANQgMAMgSAAQgRAAgNgMQgMgNAAgRgALqjTQgFgRAIgQQAJgPARgFQARgFAPAJQAQAJAEARQAFARgIAPQgJAPgRAFQgFACgHAAQgOAAgLgJQgMgIgDgOgAMIEHQgRgFgJgPQgJgPAFgRQAFgRAPgJQAPgJARAFQARAFAJAPQAJAPgFARQgEAOgLAJQgMAJgOAAQgEAAgHgCgAKkHQQgPgJgEgRQgFgSAJgPQAKgPARgEQARgEAPAJQAPAJAEASQAEARgJAPIAAAAQgNAUgXAAQgNAAgJgGgAFQLuQgJgPAGgRQAFgRAQgIQAQgIAQAFQARAGAIAPQAIAQgFARQgGAQgPAIQgJAFgLAAQgLAAgKgGQgLgGgFgLgAB5MvQgEgRAKgPQAJgPASgEQARgDAPAJQAOAKAEARQAEARgKAPQgKAPgRAEQgDAAgGAAQgPAAgLgJQgMgJgDgPgAINJ2QgMgMABgSQAAgSANgMQANgMASABQARAAAMANQAMANAAASQgBARgNAMQgLAMgSAAQgSAAgNgOgAs2hEQgRgCgLgOQgLgOACgSQADgRAOgLQAOgKARACQARACALAOQALAOgCARQgCAQgMALQgMAKgQAAgAhpsuQgBgSALgOQALgNASgCQARgBAOALQANALACASQACARgMAOQgLANgRACIgEAAQgRAAgMgLQgMgLgCgQgAlCr3QgGgRAIgQQAIgQARgFQAQgGAQAIQAQAIAFARQAGAQgIAQQgHAQgRAFQgIADgGAAQgNAAgLgIQgMgIgEgNgAqhnnQgNgLgCgRQgCgSALgOQALgOARgCQASgCANALQAOAMACARQACARgLAOQgNAQgUAAQgPAAgMgJgAoFqJQgKgOADgSQADgRAPgKQAOgKARADQASAEAKAOQAKAOgEASQgDARgOAKQgKAHgOAAQgXAAgMgSgAsIkgQgQgGgHgRQgGgQAGgQQAHgQAQgHQARgHAQAHQAQAHAHAQQAGAQgGAQQgFAMgLAHQgLAHgMAAQgIAAgJgDgAtaB2QgCgRAKgOQALgOARgCQASgCAOAKQAOALACASQADARgLAOQgLAOgSACIgFABQgQAAgMgLQgMgLgCgQgAseFaQgHgQAHgRQAHgQAQgHQAQgGARAGQAQAHAHAQQAGARgGAQQgHAQgQAHQgIADgJAAQgMAAgLgHQgLgHgFgMgAqmIlQgLgOACgRQACgRAOgLQANgLASABQARACALAOQAMAOgCARQgCASgOALQgMAJgPAAQgVAAgMgQgAn5LGQgOgKgEgRQgDgRAKgPQAKgOASgEQARgDAOAKQAPAKADARQADASgKAOQgMATgXAAQgMAAgMgIgAklMvQgRgGgIgQQgIgPAGgRQAFgRAQgIQAQgHARAFQAQAGAIAQQAIAPgGARQgEANgLAIQgLAIgOAAQgHAAgGgCgAhANeQgSgCgLgNQgLgOABgRQACgSANgLQAOgMASACQARACALANQAMAOgCARQgBARgNALQgMALgQAAg");
+	this.shape.graphics.f().s("#767778").ss(2.8).p("AFgq1QgQgIgFgRQgFgRAIgPQAIgQARgFQAQgGAQAIQAQAJAFAQQAFARgIAQQgFAKgLAHQgKAGgMAAQgKAAgJgFgAIOo7QgNgMgBgRQAAgSAMgNQAMgNARAAQASgBANAMQANAMAAASQABASgMAMQgMAOgTAAQgRAAgMgMgACYr8QgSgDgJgPQgKgPAEgRQADgRAPgKQAOgKASAEQARAEAKAOQAKAPgEARQgDAPgMAKQgMAJgPAAgAKUmWQgJgPAEgRQAEgRAPgJQAQgKARAFQARAEAJAPQAJAPgEARQgEARgPAJQgLAGgLAAQgZAAgMgUgALqjTQgFgRAIgQQAJgPARgFQARgFAPAJQAQAJAEARQAFARgIAPQgJAPgRAFQgFACgHAAQgOAAgLgJQgMgIgDgOgAMHAAIAAgBQAAgRAMgNQANgMARgBQASAAAMANQANAMAAASIAAABQAAARgNANQgMAMgSAAQgRAAgNgMQgMgNAAgRgAMIEHQgRgFgJgPQgJgPAFgRQAFgRAPgJQAPgJARAFQARAFAJAPQAJAPgFARQgEAOgLAJQgMAJgOAAQgEAAgHgCgAKkHQQgPgJgEgRQgFgSAJgPQAKgPARgEQARgEAPAJQAPAJAEASQAEARgJAPIAAAAQgNAUgXAAQgNAAgJgGgAFQLuQgJgPAGgRQAFgRAQgIQAQgIAQAFQARAGAIAPQAIAQgFARQgGAQgPAIQgJAFgLAAQgLAAgKgGQgLgGgFgLgAB5MvQgEgRAKgPQAJgPASgEQARgDAPAJQAOAKAEARQAEARgKAPQgKAPgRAEQgDAAgGAAQgPAAgLgJQgMgJgDgPgAINJ2QgMgMABgSQAAgSANgMQANgMASABQARAAAMANQAMANAAASQgBARgNAMQgLAMgSAAQgSAAgNgOgAs2hEQgRgCgLgOQgLgOACgSQADgRAOgLQAOgKARACQARACALAOQALAOgCARQgCAQgMALQgMAKgQAAgAhpsuQgBgSALgOQALgNASgCQARgBAOALQANALACASQACARgMAOQgLANgRACIgEAAQgRAAgMgLQgMgLgCgQgAlCr3QgGgRAIgQQAIgQARgFQAQgGAQAIQAQAIAFARQAGAQgIAQQgHAQgRAFQgIADgGAAQgNAAgLgIQgMgIgEgNgAqhnnQgNgLgCgRQgCgSALgOQALgOARgCQASgCANALQAOAMACARQACARgLAOQgNAQgUAAQgPAAgMgJgAoFqJQgKgOADgSQADgRAPgKQAOgKARADQASAEAKAOQAKAOgEASQgDARgOAKQgKAHgOAAQgXAAgMgSgAsIkgQgQgGgHgRQgGgQAGgQQAHgQAQgHQARgHAQAHQAQAHAHAQQAGAQgGAQQgFAMgLAHQgLAHgMAAQgIAAgJgDgAtaB2QgCgRAKgOQALgOARgCQASgCAOAKQAOALACASQADARgLAOQgLAOgSACIgFABQgQAAgMgLQgMgLgCgQgAseFaQgHgQAHgRQAHgQAQgHQAQgGARAGQAQAHAHAQQAGARgGAQQgHAQgQAHQgIADgJAAQgMAAgLgHQgLgHgFgMgAqmIlQgLgOACgRQACgRAOgLQANgLASABQARACALAOQAMAOgCARQgCASgOALQgMAJgPAAQgVAAgMgQgAn5LGQgOgKgEgRQgDgRAKgPQAKgOASgEQARgDAOAKQAPAKADARQADASgKAOQgMATgXAAQgMAAgMgIgAklMvQgRgGgIgQQgIgPAGgRQAFgRAQgIQAQgHARAFQAQAGAIAQQAIAPgGARQgEANgLAIQgLAIgOAAQgHAAgGgCgAhANeQgSgCgLgNQgLgOABgRQACgSANgLQAOgMASACQARACALANQAMAOgCARQgBARgNALQgMALgQAAg");
 	this.shape.setTransform(1.659,0.016);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.cog_medium, new cjs.Rectangle(-132.4,-134.5,264.9,269.1), null);
+}).prototype = getMCSymbolPrototype(lib.cog_medium, new cjs.Rectangle(-132.4,-134.5,264.8,269), null);
 
 
 (lib.circles_mc = function(mode,startPosition,loop,reversed) {
@@ -9187,12 +9328,12 @@ if (reversed == null) { reversed = false; }
 		this.innerWorkings.titles_mc.alpha = 0;
 		
 		const cogsDefaultTimeline = gsap.timeline();
-		const splitPieOpenTimeline = gsap.timeline();  
+		const splitPieOpenTimeline = gsap.timeline({paused: true});  
 		
 		const cog_small_tl = gsap.timeline();
 		const cog_medium_tl = gsap.timeline();
 		const cog_large_tl = gsap.timeline();
-		const innerDisk_mc_tl = gsap.timeline({paused: true});
+		const innerDisk_mc_tl = gsap.timeline();
 		
 		const orangeArea_tl = gsap.timeline({paused: true});
 		const tealArea_tl = gsap.timeline({paused: true});
@@ -9262,7 +9403,7 @@ if (reversed == null) { reversed = false; }
 				animateAreaPurple();
 			}
 		
-			gsap.to(this.innerWorkings, {alpha: 1, rotation: "90", duration: 2, ease:Linear.easeOut, delay: 1}); 
+			gsap.to(this.innerWorkings, {alpha: 1, rotation: "90", duration: 2.2, ease:Linear.in, delay: 1}); 
 			gsap.to(this.innerWorkings.titles_mc, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 3});
 		
 			buttons.forEach((i, j) => { 
@@ -9276,8 +9417,8 @@ if (reversed == null) { reversed = false; }
 		
 		const animateAreaOrange = () => {
 			orangeArea_tl
-				.fromTo(this.ringOrange_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 0.75, ease:Linear.easeOut, delay: 2}, 0)
-				.fromTo(this.optionsOrange_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0)
+				.fromTo(this.ringOrange_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 1.3, ease:Linear.out, delay: 2}, 0)
+				.fromTo(this.optionsOrange_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 2.2}, 0)
 				.fromTo(this.circles_mc.orangeCircle_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0);
 			
 			//
@@ -9289,8 +9430,8 @@ if (reversed == null) { reversed = false; }
 		
 		const animateAreaTeal = () => {
 			tealArea_tl
-				.fromTo(this.ringTeal_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 0.75, ease:Linear.easeOut, delay: 2}, 0)
-				.fromTo(this.optionsTeal_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0)
+				.fromTo(this.ringTeal_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 1.3, ease:Linear.out, delay: 2}, 0)
+				.fromTo(this.optionsTeal_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 2.2}, 0)
 				.fromTo(this.circles_mc.tealCircle_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0);
 			
 			//
@@ -9302,8 +9443,8 @@ if (reversed == null) { reversed = false; }
 		
 		const animateAreaPurple = () => {
 			purpleArea_tl
-				.fromTo(this.ringPurple_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 0.75, ease:Linear.easeOut, delay: 2}, 0) 
-				.fromTo(this.optionsPurple_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0)
+				.fromTo(this.ringPurple_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 1.3, ease:Linear.out, delay: 2}, 0) 
+				.fromTo(this.optionsPurple_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 2.2}, 0)
 				.fromTo(this.circles_mc.purpleCircle_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0);
 			
 			//
@@ -9318,15 +9459,18 @@ if (reversed == null) { reversed = false; }
 		/*  */
 		function concatSplices(index) {
 			// splice array items from index to length 
-			let tempButtons = [];
+			var tempButtons = [];
+			var backArraySection = [];
 			
 			buttons.forEach((i) => {
 				tempButtons.push(i);
 			});
-		
-			tempButtons.splice(index, 1);
 			
-			return tempButtons;
+			tempButtons.splice(index, 1);
+		
+			backArraySection = tempButtons.splice(index, tempButtons.length);
+		
+			return backArraySection.concat(tempButtons).reverse();
 		}
 		
 		
@@ -9334,30 +9478,40 @@ if (reversed == null) { reversed = false; }
 		// EVENT HANDLERS
 		////////////////////////////////////////////////////////////////////////////////////////
 		
-		function clickHandler() {                          
-		
+		function clickHandler() {
+			// rotation to which other slices rotate to
+			let rotation = this.data.rotation;
 			// find the index for slice clicked
-			const index = buttons.findIndex(button => button === this.name);
+			const index = buttons.findIndex(button => button === this.name);  
 			//
 			const buttonsSplice = concatSplices(index);
 			
 			// loop new array and animate all other slices
 			buttonsSplice.forEach((i, j) => {
-				if (this.data.area === "orange" || this.data.area === "teal" || this.data.area === "purple") {
+				if (this.data.areaColor === "orange" || this.data.areaColor === "teal" || this.data.areaColor === "purple") {
 					// 
 					splitPieOpenTimeline.add(gsap.to(this.parent[i], {
-						rotation: 90 + (j * 10), duration: 0.5, onComplete:() => {
-							gsap.to(this.parent[i],{alpha: 0});
-						}
-					}), 0.1 * j);
+						rotation: "-=40", duration: 0.5, alpha: 0, ease: "power3.in"
+					}), "-=0.3");
+					
 					//
-					cogsOpenAnim(this.data.area);               
+					cogsOpenAnim(this.data.areaColor); 
+					splitPieOpenTimeline.play();
 		
-					// calls a function in the script tag in the html
-					animateArea(this.data.area);
+					//
+					gsap.to(this, {alpha: 0, delay: 2});    
+					gsap.to(this.parent.parent["cog_small"], {alpha: 0.3, delay: 2});
+														 
+					//
+					gsap.to("body", {delay: 2.6, onComplete: () => {
+						cog_small_tl.pause();
+						cog_medium_tl.pause();
+					}});
 				}
 			});
-		}
+		
+		
+		}                   
 		
 		
 		////////////////////////////////////////////////////////////////////////////////////////
@@ -9367,9 +9521,10 @@ if (reversed == null) { reversed = false; }
 		/* Mouse Click Handlers */
 		
 		buttons.forEach((i, j) => { 
-		    this[i].addEventListener("click", clickHandler.bind(this[i]));
-			this[i].data = {
-					area: areaColors[j]
+		    this.thePie_mc[i].addEventListener("click", clickHandler.bind(this.thePie_mc[i]));
+			this.thePie_mc[i].data = {
+					areaColor: areaColors[j],
+					rotation: j * 40
 				}
 		});
 		
@@ -9421,48 +9576,16 @@ if (reversed == null) { reversed = false; }
 	// circles_mc
 	this.circles_mc = new lib.circles_mc();
 	this.circles_mc.name = "circles_mc";
-	this.circles_mc.setTransform(370,370);
+	this.circles_mc.setTransform(370,370,0.9767,0.9767);
 
 	this.timeline.addTween(cjs.Tween.get(this.circles_mc).wait(1));
 
 	// pieSlices
-	this.pie_01 = new lib.pie_09();
-	this.pie_01.name = "pie_01";
-	this.pie_01.setTransform(369.35,370,1.1815,1.1815,0,0,0,0.1,0);
+	this.thePie_mc = new lib.thePie_mc();
+	this.thePie_mc.name = "thePie_mc";
+	this.thePie_mc.setTransform(369.35,369.95);
 
-	this.pie_02 = new lib.pie_08();
-	this.pie_02.name = "pie_02";
-	this.pie_02.setTransform(369.45,370.05,1.1815,1.1815,0,0,0,0.1,215.8);
-
-	this.pie_03 = new lib.pie_07();
-	this.pie_03.name = "pie_03";
-	this.pie_03.setTransform(369.45,370,1.1815,1.1815,0,0,0,0.1,49);
-
-	this.pie_04 = new lib.pie_06();
-	this.pie_04.name = "pie_04";
-	this.pie_04.setTransform(369.35,370,1.1815,1.1815);
-
-	this.pie_05 = new lib.pie_05();
-	this.pie_05.name = "pie_05";
-	this.pie_05.setTransform(369.3,370,1.1815,1.1815,0,0,0,96,0);
-
-	this.pie_06 = new lib.pie_04();
-	this.pie_06.name = "pie_06";
-	this.pie_06.setTransform(369.35,370,1.1815,1.1815,0,0,0,243.7,0);
-
-	this.pie_07 = new lib.pie_03();
-	this.pie_07.name = "pie_07";
-	this.pie_07.setTransform(369.4,370,1.1815,1.1815,0,0,0,281.6,48.6);
-
-	this.pie_08 = new lib.pie_02();
-	this.pie_08.name = "pie_08";
-	this.pie_08.setTransform(369.4,370.05,1.1815,1.1815,0,0,0,277.3,215.5);
-
-	this.pie_09 = new lib.pie_01();
-	this.pie_09.name = "pie_09";
-	this.pie_09.setTransform(369.45,370.05,1.1815,1.1815,0,0,0,181.1,281.6);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.pie_09},{t:this.pie_08},{t:this.pie_07},{t:this.pie_06},{t:this.pie_05},{t:this.pie_04},{t:this.pie_03},{t:this.pie_02},{t:this.pie_01}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.thePie_mc).wait(1));
 
 	// ringOrange_mc
 	this.ringOrange_mc = new lib.ringOrange_mc();
