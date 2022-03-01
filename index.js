@@ -8120,7 +8120,7 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#666666").s().p("Ak9KuQh0g3hihiQiriqgmjhQgMhCABhIQAAk2DcjdQDcjdE3AAQE4AADcDdQDcDdAAE2QAAE4jcDdQjcDck4AAQisAAiRhDg");
+	this.shape.graphics.f("#484848").s().p("Ak9KuQh0g3hihiQiriqgmjhQgMhCABhIQAAk2DcjdQDcjdE3AAQE4AADcDdQDcDdAAE2QAAE4jcDdQjcDck4AAQisAAiRhDg");
 	this.shape.setTransform(0,0.025);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
@@ -9198,6 +9198,11 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	// Grey
+	this.instance = new lib.greyCircle_mc();
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
 	// Teal
 	this.tealCircle_mc = new lib.tealCircle_mc();
 	this.tealCircle_mc.name = "tealCircle_mc";
@@ -9218,11 +9223,6 @@ if (reversed == null) { reversed = false; }
 	this.orangeCircle_mc.visible = false;
 
 	this.timeline.addTween(cjs.Tween.get(this.orangeCircle_mc).wait(1));
-
-	// Grey
-	this.instance = new lib.greyCircle_mc();
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
@@ -9493,7 +9493,7 @@ if (reversed == null) { reversed = false; }
 		
 					//
 					gsap.to(this, {alpha: 0, delay: 2});    
-					gsap.to(this.parent.parent["cog_small"], {alpha: 0.3, delay: 2});
+					gsap.to(this.parent.parent["cog_small"], {alpha: 0, delay: 2});
 														 
 					//
 					gsap.to("body", {delay: 2.6, onComplete: () => {

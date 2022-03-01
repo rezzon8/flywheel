@@ -29,6 +29,7 @@
         anim_container,
         dom_overlay_container,
         fnStartAnimation;
+
       function init() {
         canvas = document.getElementById("canvas");
         anim_container = document.getElementById("animation_container");
@@ -40,6 +41,7 @@
         handleComplete({}, comp);
 
       }
+
       function handleComplete(evt, comp) {
         //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
         var lib = comp.getLibrary();
@@ -61,13 +63,14 @@
         AdobeAn.compositionLoaded(lib.properties.id);
         fnStartAnimation();
       }
+
 			async function animateArea(areaColor, areaSlice = "start", contentIndex = 0) {
 				var flywheelTitle = document.querySelector("#flywheel > h1:first-child");
 				var flywheelDescription = document.querySelector("#description_text_block");
 				var instructionsHeader = document.querySelector("#instructions_panel > header");
 				var instructionsContent = document.querySelector("#instructions_panel > article");
 				var instructionsFooter = document.querySelector("#instructions_panel > footer");
-				//
+				
 				await fetch('./data.json').then(response => {
 					return response.json();
 				}).then(data => {
@@ -77,17 +80,17 @@
 				}).catch(err => {
 					// Do something for an error here
 				});
-				//
+				
 				gsap.to("#instructions_panel", {"right": '0'});
 			}
 
 			async function setTitleText(areaColor) {
 				var flywheelTitle = document.querySelector("#flywheel > h1:first-child");
-				//
+				
 				await fetch('./data.json').then(response => {
 					return response.json();
 				}).then(data => {
-					flywheelTitle.innerHTML = `<span id="areaBullet" style="background-color: ${data[0].areaColors[areaColor]}"></span>` + data[0].titles[areaColor]; // set page page title
+					flywheelTitle.innerHTML = data[0].titles[areaColor]; // set page page title
 					toggleTitleDescription();
 				}).catch(err => {
 					// Do something for an error here
@@ -101,25 +104,6 @@
 				gsap.to(flywheelDescription, {"alpha": 0}); // hide flywheel description
 				gsap.to(flywheelTitle, {alpha: 1}); // show flywheel title
 			}
-
-
-/** 
-
-
-			function animateArea(areaColor, areaSlice = "start", contentIndex = 0) {
-				var flywheelDescription = document.querySelector("#description_text_block");
-				var instructionsHeader = document.querySelector("#instructions_panel > header");
-				var instructionsContent = document.querySelector("#instructions_panel > article");
-				var instructionsFooter = document.querySelector("#instructions_panel > footer");
-
-        instructionsContent.innerHTML = data[0].content[areaColor][areaSlice][contentIndex].copy; // set instructions content
-        instructionsHeader.style.backgroundColor = data[0].areaColors[areaColor]; // set instructions header color
-        instructionsFooter.innerHTML = `<a href="${data[0].content[areaColor][areaSlice][contentIndex].link}">Read More</a>`; // set footer button link
-
-				gsap.to("#instructions_panel", {"right": '0'});
-			}
-*/
-
     </script>
     <!-- write your code here -->
   </head>
