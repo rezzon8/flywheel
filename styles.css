@@ -21,6 +21,15 @@
   justify-content: center;
 }
 
+#areaBullet {
+  background-color: red;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  margin-right: 1rem;
+  margin-top: 0.25rem;
+}
+
 #flywheel #canvas {
   position: absolute;
   display: block;
@@ -63,7 +72,7 @@
   overflow-y: auto;
 }
 
-#flywheel #instructions_text_block {
+#flywheel #instructions_panel {
   width: 350px;
   background-color: white;
   position: absolute;
@@ -76,28 +85,37 @@
   box-shadow: 0rem 0.4rem 0.5rem 0rem rgb(201, 201, 201);
 }
 
-#flywheel #instructions_text_block > header {
+#flywheel #instructions_panel > header {
   background-color: #727272;
   min-height: 60px;
 }
 
-#flywheel #instructions_text_block > article {
+#flywheel #instructions_panel > article {
   padding: 1rem 2rem 5px;
   height: 424px;
   overflow-y: auto;
 }
 
-#flywheel #instructions_text_block > article p:first-child {
+#flywheel #instructions_panel > article p:first-child {
   margin-top: 0;
   padding-top: 0;
 }
 
-#flywheel #instructions_text_block > article p:last-child {
+#flywheel #instructions_panel > article p:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-#flywheel #instructions_text_block > footer {
+#flywheel #instructions_panel > footer {
   background-color: rgb(255, 255, 255);
-  min-height: 80px;
+  padding: 2rem;
+}
+
+#flywheel #instructions_panel > footer .read-more {
+  background-color: rgb(151, 66, 66);
+  border-radius: 14px;
+  color: #ffffff;
+  padding: 5px 2rem;
+  font-weight: bold;
+  text-decoration: none;
 }

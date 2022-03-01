@@ -64,24 +64,62 @@
 			async function animateArea(areaColor, areaSlice = "start", contentIndex = 0) {
 				var flywheelTitle = document.querySelector("#flywheel > h1:first-child");
 				var flywheelDescription = document.querySelector("#description_text_block");
-				var instructionsHeader = document.querySelector("#instructions_text_block > header");
-				var instructionsContent = document.querySelector("#instructions_text_block > article");
-				var instructionsFooter = document.querySelector("#instructions_text_block > footer");
+				var instructionsHeader = document.querySelector("#instructions_panel > header");
+				var instructionsContent = document.querySelector("#instructions_panel > article");
+				var instructionsFooter = document.querySelector("#instructions_panel > footer");
 				//
 				await fetch('./data.json').then(response => {
 					return response.json();
 				}).then(data => {
-					flywheelTitle.innerHTML = data[0].titles[areaColor]; // set page page title
-					gsap.to(flywheelDescription, {"alpha": 0}); // hide flywheel description
-					gsap.to(flywheelTitle, {alpha: 1, visible: 1}); // show flywheel title
-					instructionsContent.innerHTML = data[0].content[areaColor][areaSlice][contentIndex]; // set instructions content
-					instructionsHeader.style.backgroundColor = data[0].areaColors[areaColor]; // set instructions header color
+          flywheelTitle.innerHTML = '<span id="areaBullet"></span> ' + data[0].titles[areaColor]; // set page page title
+          gsap.to(flywheelDescription, {"alpha": 0}); // hide flywheel description
+          gsap.to(flywheelTitle, {alpha: 1}); // show flywheel title
+          instructionsContent.innerHTML = data[0].content[areaColor][areaSlice][contentIndex].copy; // set instructions content
+          instructionsHeader.style.backgroundColor = data[0].areaColors[areaColor]; // set instructions header color
+          instructionsFooter.innerHTML = `<a href="${data[0].content[areaColor][areaSlice][contentIndex].link}" class="read-more">Read more</a>`; // set footer 
 				}).catch(err => {
 					// Do something for an error here
 				});
 				//
-				gsap.to("#instructions_text_block", {"right": '0'});
+				gsap.to("#instructions_panel", {"right": '0'});
 			}
+
+			async function setTitleText(areaColor) {
+				var flywheelTitle = document.querySelector("#flywheel > h1:first-child");
+				//
+				await fetch('./data.json').then(response => {
+					return response.json();
+				}).then(data => {
+					flywheelTitle.innerHTML = '<span id="areaBullet"></span> ' + data[0].titles[areaColor]; // set page page title 
+					toggleTitleDescription();
+				}).catch(err => {
+					// Do something for an error here
+				});
+			}
+
+			function toggleTitleDescription() {
+				gsap.to(flywheelDescription, {"alpha": 0}); // hide flywheel description
+				gsap.to(flywheelTitle, {alpha: 1}); // show flywheel title
+			}
+
+
+/** 
+
+
+			function animateArea(areaColor, areaSlice = "start", contentIndex = 0) {
+				var flywheelDescription = document.querySelector("#description_text_block");
+				var instructionsHeader = document.querySelector("#instructions_panel > header");
+				var instructionsContent = document.querySelector("#instructions_panel > article");
+				var instructionsFooter = document.querySelector("#instructions_panel > footer");
+
+        instructionsContent.innerHTML = data[0].content[areaColor][areaSlice][contentIndex].copy; // set instructions content
+        instructionsHeader.style.backgroundColor = data[0].areaColors[areaColor]; // set instructions header color
+        instructionsFooter.innerHTML = `<a href="${data[0].content[areaColor][areaSlice][contentIndex].link}">Read More</a>`; // set footer button link
+
+				gsap.to("#instructions_panel", {"right": '0'});
+			}
+*/
+
     </script>
     <!-- write your code here -->
   </head>
@@ -94,7 +132,7 @@
 	<div id="flywheel">
     <h1></h1>
 		<div id="description_text_block"><p>Organisations that sustain innovation use technology as the flywheel that drives innovation in their business. It requires effort to build the flywheel, but once up and running you can continue to sustain innovation by applying small continuous changes (or force) to the flywheel. The resultant force and output becomes magnitudes larger with each incremental push. Explore our recommendations to build your own flywheel.</p></div>
-		<div id="instructions_text_block">
+		<div id="instructions_panel">
 			<header></header>
 			<article><p>	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ullam, nostrum quo asperiores vitae veniam incidunt tempore atque placeat est maxime tempora culpa fugiat omnis aperiam impedit numquam in adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p><p>Voluptatem ullam, nostrum quo asperiores vitae veniam incidunt tempore atque placeat est maxime tempora culpa fugiat omnis aperiam impedit numquam in adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ullam, nostrum quo asperiores vitae veniam incidunt tempore atque placeat est maxime tempora culpa fugiat omnis aperiam impedit numquam in adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p><p>Voluptatem ullam, nostrum quo asperiores vitae veniam incidunt tempore atque placeat est maxime tempora culpa fugiat omnis aperiam impedit numquam in adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p><p> Voluptatem ullam, nostrum quo asperiores vitae veniam incidunt tempore atque placeat est maxime tempora culpa fugiat omnis aperiam impedit numquam in adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p><p> Voluptatem ullam, nostrum quo asperiores vitae veniam incidunt tempore atque placeat est maxime tempora culpa fugiat omnis aperiam impedit numquam in adipisci?</p></article>
 		<footer></footer></div>

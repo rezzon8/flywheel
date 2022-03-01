@@ -3573,7 +3573,7 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#DC5D2A").ss(6,1,1).p("EAlfAAAQAAPiq/K+Qq+K/viAAQvhAAq+q/Qq/q+AAviQAAvhK/q+QK+q/PhAAQPiAAK+K/QK/K+AAPhg");
+	this.shape.graphics.f().s("#ED5307").ss(6,1,1).p("EAlfAAAQAAPiq/K+Qq+K/viAAQvhAAq+q/Qq/q+AAviQAAvhK/q+QK+q/PhAAQPiAAK+K/QK/K+AAPhg");
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
@@ -3602,8 +3602,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-75.2,-75.2,150.5,150.5);
+}).prototype = getMCSymbolPrototype(lib.purpleCircle_mc, new cjs.Rectangle(-75.2,-75.2,150.5,150.5), null);
 
 
 (lib.purple_stop_03 = function(mode,startPosition,loop,reversed) {
@@ -5152,7 +5151,7 @@ if (reversed == null) { reversed = false; }
 	this.shape_20.setTransform(115.725,125.575);
 
 	this.shape_21 = new cjs.Shape();
-	this.shape_21.graphics.f("#DC5D2A").s().p("AzC0pMAmFAV/Qj5Gtl7E/Ql8E+nQCqg");
+	this.shape_21.graphics.f("#ED5307").s().p("AzC0pMAmFAV/Qj5Gtl7E/Ql8E+nQCqg");
 	this.shape_21.setTransform(121.85,132.225);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_21},{t:this.shape_20},{t:this.shape_19},{t:this.shape_18},{t:this.shape_17},{t:this.shape_16},{t:this.shape_15},{t:this.shape_14},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
@@ -5950,15 +5949,14 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#DC5D2A").s().p("Ak9KuQh0g3hihiQiriqgmjhQgMhCABhIQAAk2DcjdQDcjdE3AAQE4AADcDdQDcDdAAE2QAAE4jcDdQjcDck4AAQisAAiRhDg");
+	this.shape.graphics.f("#ED5307").s().p("Ak9KuQh0g3hihiQiriqgmjhQgMhCABhIQAAk2DcjdQDcjdE3AAQE4AADcDdQDcDdAAE2QAAE4jcDdQjcDck4AAQisAAiRhDg");
 	this.shape.setTransform(0,0.025);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-75.2,-75.2,150.5,150.5);
+}).prototype = getMCSymbolPrototype(lib.orangeCircle_mc, new cjs.Rectangle(-75.2,-75.2,150.5,150.5), null);
 
 
 (lib.orange_stop_02 = function(mode,startPosition,loop,reversed) {
@@ -8129,8 +8127,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-75.2,-75.2,150.5,150.5);
+}).prototype = getMCSymbolPrototype(lib.greyCircle_mc, new cjs.Rectangle(-75.2,-75.2,150.5,150.5), null);
 
 
 (lib.Path_0 = function(mode,startPosition,loop,reversed) {
@@ -8921,7 +8918,7 @@ if (reversed == null) { reversed = false; }
 			this["orange_start_0" + i].addEventListener("click", clickHandler.bind(this));
 		
 			function clickHandler(event) {
-				// calls a function in the script tag in the html
+				// calls functions in the script tag in the html
 				animateArea("orange", "start", i - 1);
 			}
 		}
@@ -8930,7 +8927,7 @@ if (reversed == null) { reversed = false; }
 			this["orange_consider_0" + i].addEventListener("click", clickHandler.bind(this));
 		
 			function clickHandler(event) {
-				// calls a function in the script tag in the html
+				// calls functions in the script tag in the html
 				animateArea("orange", "consider", i - 1);
 			}
 		}
@@ -8939,7 +8936,7 @@ if (reversed == null) { reversed = false; }
 			this["orange_stop_0" + i].addEventListener("click", clickHandler.bind(this));
 		
 			function clickHandler(event) {
-				// calls a function in the script tag in the html
+				// calls functions in the script tag in the html
 				animateArea("orange", "stop", i - 1);
 			}
 		}
@@ -9205,7 +9202,6 @@ if (reversed == null) { reversed = false; }
 	this.tealCircle_mc = new lib.tealCircle_mc();
 	this.tealCircle_mc.name = "tealCircle_mc";
 	this.tealCircle_mc.visible = false;
-	new cjs.ButtonHelper(this.tealCircle_mc, 0, 1, 1);
 
 	this.timeline.addTween(cjs.Tween.get(this.tealCircle_mc).wait(1));
 
@@ -9213,7 +9209,6 @@ if (reversed == null) { reversed = false; }
 	this.purpleCircle_mc = new lib.purpleCircle_mc();
 	this.purpleCircle_mc.name = "purpleCircle_mc";
 	this.purpleCircle_mc.visible = false;
-	new cjs.ButtonHelper(this.purpleCircle_mc, 0, 1, 1);
 
 	this.timeline.addTween(cjs.Tween.get(this.purpleCircle_mc).wait(1));
 
@@ -9221,13 +9216,11 @@ if (reversed == null) { reversed = false; }
 	this.orangeCircle_mc = new lib.orangeCircle_mc();
 	this.orangeCircle_mc.name = "orangeCircle_mc";
 	this.orangeCircle_mc.visible = false;
-	new cjs.ButtonHelper(this.orangeCircle_mc, 0, 1, 1);
 
 	this.timeline.addTween(cjs.Tween.get(this.orangeCircle_mc).wait(1));
 
 	// Grey
 	this.instance = new lib.greyCircle_mc();
-	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
@@ -9359,7 +9352,7 @@ if (reversed == null) { reversed = false; }
 		
 		gsap.to(this.innerWorkings, {rotation: "-270"});
 		
-		gsap.to("#instructions_text_block", {"right": '-350px'});
+		gsap.to("#instructions_panel", {"right": '-350px'});
 		
 		
 		////////////////////////////////////////////////////////////////////////////////////////
@@ -9418,7 +9411,7 @@ if (reversed == null) { reversed = false; }
 		const animateAreaOrange = () => {
 			orangeArea_tl
 				.fromTo(this.ringOrange_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 1.3, ease:Linear.out, delay: 2}, 0)
-				.fromTo(this.optionsOrange_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 2.2}, 0)
+				.fromTo(this.optionsOrange_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 3}, 0)
 				.fromTo(this.circles_mc.orangeCircle_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0);
 			
 			//
@@ -9431,7 +9424,7 @@ if (reversed == null) { reversed = false; }
 		const animateAreaTeal = () => {
 			tealArea_tl
 				.fromTo(this.ringTeal_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 1.3, ease:Linear.out, delay: 2}, 0)
-				.fromTo(this.optionsTeal_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 2.2}, 0)
+				.fromTo(this.optionsTeal_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 3}, 0)
 				.fromTo(this.circles_mc.tealCircle_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0);
 			
 			//
@@ -9444,7 +9437,7 @@ if (reversed == null) { reversed = false; }
 		const animateAreaPurple = () => {
 			purpleArea_tl
 				.fromTo(this.ringPurple_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 1.3, ease:Linear.out, delay: 2}, 0) 
-				.fromTo(this.optionsPurple_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 2.2}, 0)
+				.fromTo(this.optionsPurple_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 3}, 0)
 				.fromTo(this.circles_mc.purpleCircle_mc, {alpha: 0, visible: true}, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 1.2}, 0);
 			
 			//
@@ -9507,6 +9500,10 @@ if (reversed == null) { reversed = false; }
 						cog_small_tl.pause();
 						cog_medium_tl.pause();
 					}});
+				
+					// in index.html
+					setTitleText(this.data.areaColor);
+					toggleTitleDescription();
 				}
 			});
 		
@@ -9548,7 +9545,7 @@ if (reversed == null) { reversed = false; }
 	// optionsTeal_mc
 	this.optionsTeal_mc = new lib.optionsTeal_mc();
 	this.optionsTeal_mc.name = "optionsTeal_mc";
-	this.optionsTeal_mc.setTransform(374.2,366.55,1,1,0,0,0,-0.1,0);
+	this.optionsTeal_mc.setTransform(373,366.55,1,1,0,0,0,-0.1,0);
 	this.optionsTeal_mc.visible = false;
 
 	this.timeline.addTween(cjs.Tween.get(this.optionsTeal_mc).wait(1));
