@@ -3582,6 +3582,31 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.ringOrange_mc, new cjs.Rectangle(-242.8,-242.8,485.70000000000005,485.70000000000005), null);
 
 
+(lib.rewind_mc = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#ED5307").ss(1,1,1).p("ACbAAQAABAgtAuQguAthAAAQg/AAgugtQgtguAAhAQAAg/AtguQAugtA/AAQBAAAAuAtQAtAuAAA/g");
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#484848").s().p("AhtBuQgtguAAhAQAAg/AtguQAugtA/AAQBAAAAuAtQAtAuAAA/QAABAgtAuQguAthAAAQg/AAgugtg");
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.rewind_mc, new cjs.Rectangle(-16.5,-16.5,33,33), null);
+
+
 (lib.purpleCircle_mc = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -9360,7 +9385,6 @@ if (reversed == null) { reversed = false; }
 		////////////////////////////////////////////////////////////////////////////////////////
 		
 		/* Rotate continuously animation - Default starting */
-		
 		function playCogsDefaultAnim() {
 			/* 
 				Add cog timelines to master timeline - 
@@ -9377,7 +9401,6 @@ if (reversed == null) { reversed = false; }
 		
 		   
 		/* Coggs opening anim */
-		
 		const cogsOpenAnim = (areaColor) => {
 			gsap.to(this.cog_large, {alpha: 0, duration: 1.8, ease:Linear.easeOut});
 			gsap.to(this.innerDisk_mc, {alpha: 0, duration: 2, ease:Linear.easeOut, delay: 1});  
@@ -9407,7 +9430,6 @@ if (reversed == null) { reversed = false; }
 		
 		   
 		/* Orange area anim */
-		
 		const animateAreaOrange = () => {
 			orangeArea_tl
 				.fromTo(this.ringOrange_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 1.3, ease:Linear.out, delay: 2}, 0)
@@ -9418,9 +9440,8 @@ if (reversed == null) { reversed = false; }
 			orangeArea_tl.play();
 		};
 		
-		   
-		/* Teal area anim */
 		
+		/* Teal area anim */
 		const animateAreaTeal = () => {
 			tealArea_tl
 				.fromTo(this.ringTeal_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 1.3, ease:Linear.out, delay: 2}, 0)
@@ -9433,7 +9454,6 @@ if (reversed == null) { reversed = false; }
 		
 		
 		/* Purple area anim */
-		
 		const animateAreaPurple = () => {
 			purpleArea_tl
 				.fromTo(this.ringPurple_mc, {scale: 0, alpha: 0, visible: true}, {alpha:1, scale: 1.06, duration: 1.3, ease:Linear.out, delay: 2}, 0) 
@@ -9506,8 +9526,6 @@ if (reversed == null) { reversed = false; }
 					toggleTitleDescription();
 				}
 			});
-		
-		
 		}                   
 		
 		
@@ -9527,12 +9545,26 @@ if (reversed == null) { reversed = false; }
 		
 		
 		/*  */
-		
 		playCogsDefaultAnim();
+		
+		/*  */
+		this.rewind_mc.addEventListener("click", resetHandler);
+		
+		function resetHandler() {
+			orangeArea_tl.reverse();
+			cogsDefaultTimeline.reverse();
+		}
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
+	// Layer_1
+	this.rewind_mc = new lib.rewind_mc();
+	this.rewind_mc.name = "rewind_mc";
+	this.rewind_mc.setTransform(789.5,101.45);
+
+	this.timeline.addTween(cjs.Tween.get(this.rewind_mc).wait(1));
 
 	// optionsOrange_mc
 	this.optionsOrange_mc = new lib.optionsOrange_mc();
@@ -9632,7 +9664,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(365.3,365.3,379.40000000000003,379.40000000000003);
+p.nominalBounds = new cjs.Rectangle(365.3,365.3,440.2,379.40000000000003);
 // library properties:
 lib.properties = {
 	id: '1392B8D961C3473EADEDBB5D2A770B98',
