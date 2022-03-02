@@ -66,14 +66,14 @@
         fnStartAnimation();
       }
 
-			async function animateArea(areaColor, areaSlice = "start", contentIndex = 0) {
+			function animateArea(areaColor, areaSlice = "start", contentIndex = 0) {
 				var flywheelTitle = document.querySelector("#flywheel > h1:first-child");
 				var flywheelDescription = document.querySelector("#description_text_block");
 				var instructionsHeader = document.querySelector("#instructions_panel > header");
 				var instructionsContent = document.querySelector("#instructions_panel > article");
 				var instructionsFooter = document.querySelector("#instructions_panel > footer");
 				
-				await fetch('./data.json').then(response => {
+				fetch('./data.json').then(response => {
 					return response.json();
 				}).then(data => {
           instructionsContent.innerHTML = data[0].content[areaColor][areaSlice][contentIndex].copy; // set instructions content
@@ -87,10 +87,10 @@
 				gsap.to("#instructions_panel", {"right": '0'});
 			}
 
-			async function setTitleText(areaColor) {
+			function setTitleText(areaColor) {
 				var flywheelTitle = document.querySelector("#flywheel > h1:first-child");
 				
-				await fetch('./data.json').then(response => {
+				fetch('./data.json').then(response => {
 					return response.json();
 				}).then(data => {
 					flywheelTitle.innerHTML = data[0].titles[areaColor]; // set page page title
