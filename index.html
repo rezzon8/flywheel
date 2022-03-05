@@ -7,46 +7,25 @@
 	4. Blank lines will be removed automatically.
 	5. Remove unnecessary comments before creating your template.
 -->
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="authoring-tool" content="Adobe_Animate_CC" />
-		<link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;900&display=swap" rel="stylesheet">
     <title>index</title>
     <!-- write your code here -->
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-    <script src="index.js?1644851404439"></script>
+    <script src="index.js?1646512020108"></script>
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
     ></script>
-		<script src="data.json"></script>
     <script>
       var canvas,
         stage,
         exportRoot,
         anim_container,
         dom_overlay_container,
-        fnStartAnimation,
-        flywheelTitle,
-        flywheelDescription,
-        instructionsHeader,
-        instructionsContent,
-        instructionsFooter,
-				state;
-
-				fetch('./data.json').then(response => {
-					return response.json();
-				}).then(data => {
-          window.localStorage.setItem("state", JSON.stringify(data)); 
-          state = JSON.parse(window.localStorage.getItem("state")); 
-				}).catch(err => {
-					// Do something for an error here
-				});
-
+        fnStartAnimation;
       function init() {
         canvas = document.getElementById("canvas");
         anim_container = document.getElementById("animation_container");
@@ -56,20 +35,14 @@
         var comp = AdobeAn.getComposition("1392B8D961C3473EADEDBB5D2A770B98");
         var lib = comp.getLibrary();
         handleComplete({}, comp);
-
-        flywheelTitle = document.querySelector("#flywheel > h1:first-child");
-        flywheelDescription = document.querySelector("#description_text_block");
-        instructionsHeader = document.querySelector("#instructions_panel > header");
-        instructionsContent = document.querySelector("#instructions_panel > article");
-        instructionsFooter = document.querySelector("#instructions_panel > footer");
       }
-
       function handleComplete(evt, comp) {
         //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
         var lib = comp.getLibrary();
         var ss = comp.getSpriteSheet();
-        exportRoot = new lib.flywheel_app();
+        exportRoot = new lib.flywheel_025();
         stage = new lib.Stage(canvas);
+        stage.enableMouseOver();
         //Registers the "tick" event listener.
         fnStartAnimation = function () {
           stage.addChild(exportRoot);
@@ -85,55 +58,41 @@
         AdobeAn.compositionLoaded(lib.properties.id);
         fnStartAnimation();
       }
-
-			function animateArea(areaColor, areaSection = "start", contentIndex = 0) {
-        instructionsContent.scrollTop = 0 // scroll to top of content on change
-        instructionsHeader.style.backgroundColor = state[0].areaColors[areaColor]; // set instructions header color
-        instructionsContent.innerHTML = state[0].content[areaColor][areaSection][contentIndex].copy; // set instructions content
-        instructionsFooter.innerHTML = `<a target="_blank" href="${state[0].content[areaColor][areaSection][contentIndex].link}" style="background-color: ${state[0].areaColors[areaColor]}" class="read-more">Read more</a>`; // set footer 
-				
-				gsap.to("#instructions_panel", {"right": '0'});
-			}
-
-			function setTitleText(areaColor) {		
-					flywheelTitle.innerHTML = state[0].titles[areaColor]; // set page page title
-			}
-
-			function toggleTitleDescription() {
-        if (gsap.getProperty(flywheelDescription, "alpha") === 1) {
-          gsap.to(flywheelDescription, {"alpha": 0});
-          gsap.to(flywheelTitle, {"alpha": 1});
-        } else {
-          gsap.to(flywheelDescription, {"alpha": 1, "delay": 3});
-          gsap.to(flywheelTitle, {"alpha": 0});
-        }
-			}
     </script>
     <!-- write your code here -->
   </head>
-  <body
-    onload="init();"
-    style="
-      margin: 0px;
-    "
-  >
-	<div id="flywheel">
-    <h1></h1>
-		<div id="description_text_block"><p>Organisations that sustain innovation use technology as the flywheel that drives innovation in their business. It requires effort to build the flywheel, but once up and running you can continue to sustain innovation by applying small continuous changes (or force) to the flywheel. The resultant force and output becomes magnitudes larger with each incremental push. Explore our recommendations to build your own flywheel.</p></div>
-		<div id="instructions_panel">
-			<header></header>
-			<article><p>	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ullam, nostrum quo asperiores vitae veniam incidunt tempore atque placeat est maxime tempora culpa fugiat omnis aperiam impedit numquam in adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p><p>Voluptatem ullam, nostrum quo asperiores vitae veniam incidunt tempore atque placeat est maxime tempora culpa fugiat omnis aperiam impedit numquam in adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ullam, nostrum quo asperiores vitae veniam incidunt tempore atque placeat est maxime tempora culpa fugiat omnis aperiam impedit numquam in adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p><p>Voluptatem ullam, nostrum quo asperiores vitae veniam incidunt tempore atque placeat est maxime tempora culpa fugiat omnis aperiam impedit numquam in adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p><p> Voluptatem ullam, nostrum quo asperiores vitae veniam incidunt tempore atque placeat est maxime tempora culpa fugiat omnis aperiam impedit numquam in adipisci? Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p><p> Voluptatem ullam, nostrum quo asperiores vitae veniam incidunt tempore atque placeat est maxime tempora culpa fugiat omnis aperiam impedit numquam in adipisci?</p></article>
-		<footer></footer></div>
+  <body onload="init();" style="margin: 0px">
     <div
       id="animation_container"
+      style="
+        background-color: rgba(255, 255, 255, 1);
+        width: 740px;
+        height: 740px;
+      "
     >
       <canvas
         id="canvas"
+        width="740"
+        height="740"
+        style="
+          position: absolute;
+          display: block;
+          background-color: rgba(255, 255, 255, 1);
+        "
       ></canvas>
       <div
         id="dom_overlay_container"
+        style="
+          pointer-events: none;
+          overflow: hidden;
+          width: 740px;
+          height: 740px;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          display: block;
+        "
       ></div>
-		</div>
     </div>
-  </div>
+  </body>
 </html>

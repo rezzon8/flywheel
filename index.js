@@ -9480,7 +9480,7 @@ if (reversed == null) { reversed = false; }
 			});
 		
 			gsap.to("body", {delay: 1.4, onComplete: () => {
-				splitPieOpenTimeline.timeScale(2);
+				splitPieOpenTimeline.timeScale(1.7);
 				splitPieOpenTimeline.reverse();
 			}});
 		
