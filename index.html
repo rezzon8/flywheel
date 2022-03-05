@@ -41,9 +41,8 @@
 				fetch('./data.json').then(response => {
 					return response.json();
 				}).then(data => {
-          localStorage.clear();
-          localStorage.setItem("state", JSON.stringify(data)); 
-          state = JSON.parse(localStorage.getItem("state")); 
+          window.localStorage.setItem("state", JSON.stringify(data)); 
+          state = JSON.parse(window.localStorage.getItem("state")); 
 				}).catch(err => {
 					// Do something for an error here
 				});
@@ -63,7 +62,6 @@
         instructionsHeader = document.querySelector("#instructions_panel > header");
         instructionsContent = document.querySelector("#instructions_panel > article");
         instructionsFooter = document.querySelector("#instructions_panel > footer");
-				state = {};
       }
 
       function handleComplete(evt, comp) {
@@ -88,7 +86,7 @@
         fnStartAnimation();
       }
 
-			async function animateArea(areaColor, areaSection = "start", contentIndex = 0) {
+			function animateArea(areaColor, areaSection = "start", contentIndex = 0) {
         instructionsContent.scrollTop = 0 // scroll to top of content on change
         instructionsHeader.style.backgroundColor = state[0].areaColors[areaColor]; // set instructions header color
         instructionsContent.innerHTML = state[0].content[areaColor][areaSection][contentIndex].copy; // set instructions content
@@ -97,7 +95,7 @@
 				gsap.to("#instructions_panel", {"right": '0'});
 			}
 
-			async function setTitleText(areaColor) {		
+			function setTitleText(areaColor) {		
 					flywheelTitle.innerHTML = state[0].titles[areaColor]; // set page page title
 			}
 
