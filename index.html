@@ -87,6 +87,7 @@
       }
 
 			function animateArea(areaColor, areaSection = "start", contentIndex = 0) {
+        let state = JSON.parse(window.localStorage.getItem("state"));
         instructionsContent.scrollTop = 0 // scroll to top of content on change
         instructionsHeader.style.backgroundColor = state[0].areaColors[areaColor]; // set instructions header color
         instructionsContent.innerHTML = state[0].content[areaColor][areaSection][contentIndex].copy; // set instructions content
