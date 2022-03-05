@@ -9429,8 +9429,8 @@ if (reversed == null) { reversed = false; }
 		   
 		/* Coggs opening anim */
 		const cogsOpenAnim = (areaColor) => {
-			this.thePie_mc.mouseChildren = false;
-			gsap.to(this.cog_large, {alpha: 0, duration: 1.8, ease:Linear.easeOut});
+			this.mouseChildren = false;
+			gsap.to(this.cog_large, {alpha: 0, duration: 2.4, ease:Linear.easeOut});
 			gsap.to(this.innerDisk_mc, {alpha: 0, duration: 2, ease:Linear.easeOut, delay: 1});  
 			
 			if (areaColor === "orange") {
@@ -9453,6 +9453,10 @@ if (reversed == null) { reversed = false; }
 			gsap.to(this.reset_mc, {alpha: 1, delay: 3.5});
 			
 			toggleTitleDescription();
+		
+			gsap.to("body", {delay: 3, onComplete: () => {
+				this.mouseChildren = true;
+			}});
 		};
 		
 		   
@@ -9461,7 +9465,7 @@ if (reversed == null) { reversed = false; }
 			this.mouseChildren = false;
 			gsap.to(this.reset_mc, {alpha: 0});
 		
-			gsap.to(this.cog_large, {alpha: 1, duration: 1.8, ease:Linear.easeOut, delay: 3});
+			gsap.to(this.cog_large, {alpha: 1, duration: 1, ease:Linear.easeOut, delay: 3});
 			gsap.to(this.innerDisk_mc, {alpha: 1, duration: 2, ease:Linear.easeOut, delay: 1});
 		
 			orangeArea_tl.reverse();
@@ -9475,12 +9479,11 @@ if (reversed == null) { reversed = false; }
 				gsap.to(this[i], {alpha: 1, duration: 1.2, ease:Linear.easeIn, delay: 1});
 			});
 		
-			gsap.to("body", {delay: 2, onComplete: () => {
+			gsap.to("body", {delay: 1.3, onComplete: () => {
 				splitPieOpenTimeline.reverse();
 			}});
 		
-			gsap.to("body", {delay: 5, onComplete: () => {
-				this.thePie_mc.mouseChildren = true;
+			gsap.to("body", {delay: 4, onComplete: () => {
 				this.mouseChildren = true;
 			}});
 		
@@ -9719,19 +9722,19 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.ringPurple_mc).wait(1));
 
-	// innerDisk
-	this.innerDisk_mc = new lib.disk();
-	this.innerDisk_mc.name = "innerDisk_mc";
-	this.innerDisk_mc.setTransform(369.35,370,1.1815,1.1815);
-
-	this.timeline.addTween(cjs.Tween.get(this.innerDisk_mc).wait(1));
-
 	// innerWorkings
 	this.innerWorkings = new lib.innerWorkings();
 	this.innerWorkings.name = "innerWorkings";
 	this.innerWorkings.setTransform(367.45,370.3,1.079,1.079,89.9935,0,0,0.3,-0.1);
 
 	this.timeline.addTween(cjs.Tween.get(this.innerWorkings).wait(1));
+
+	// innerDisk
+	this.innerDisk_mc = new lib.disk();
+	this.innerDisk_mc.name = "innerDisk_mc";
+	this.innerDisk_mc.setTransform(369.35,370,1.1815,1.1815);
+
+	this.timeline.addTween(cjs.Tween.get(this.innerDisk_mc).wait(1));
 
 	// mainCog
 	this.cog_large = new lib.cog_large();

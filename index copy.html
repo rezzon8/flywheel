@@ -35,7 +35,8 @@
         flywheelDescription,
         instructionsHeader,
         instructionsContent,
-        instructionsFooter;
+        instructionsFooter,
+				state;
 
       function init() {
         canvas = document.getElementById("canvas");
@@ -52,6 +53,7 @@
         instructionsHeader = document.querySelector("#instructions_panel > header");
         instructionsContent = document.querySelector("#instructions_panel > article");
         instructionsFooter = document.querySelector("#instructions_panel > footer");
+				state = {};
       }
 
       function handleComplete(evt, comp) {
@@ -80,6 +82,7 @@
 				await fetch('./data.json').then(response => {
 					return response.json();
 				}).then(data => {
+					state = data;
           instructionsContent.scrollTop = 0 // scroll to top of content on change
           instructionsHeader.style.backgroundColor = data[0].areaColors[areaColor]; // set instructions header color
           instructionsContent.innerHTML = data[0].content[areaColor][areaSection][contentIndex].copy; // set instructions content
@@ -106,7 +109,7 @@
           gsap.to(flywheelDescription, {"alpha": 0});
           gsap.to(flywheelTitle, {"alpha": 1});
         } else {
-          gsap.to(flywheelDescription, {"alpha": 1, "delay": 4});
+          gsap.to(flywheelDescription, {"alpha": 1, "delay": 3});
           gsap.to(flywheelTitle, {"alpha": 0});
         }
 			}
