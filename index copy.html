@@ -96,7 +96,7 @@
 			}
 
 			function setTitleText(areaColor) {		
-					flywheelTitle.innerHTML = state[0].titles[areaColor]; // set page page title
+					flywheelTitle.innerHTML = JSON.parse(window.localStorage.getItem("state"))[0].titles[areaColor]; // set page page title
 			}
 
 			function toggleTitleDescription() {
