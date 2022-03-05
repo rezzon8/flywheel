@@ -8289,14 +8289,14 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#C6C6C6").s().p("EgA/AreQgegZgDgkIgJheQh6gEh8gRIgYBbQgKAhghAVQghASgjgGQgkgHgWgcQgZgeADgjIAHhdQh6gbh0glIgoBUQgPAhgkANQgiANgjgNQgigMgSggQgSgiAHgiIAYhaQhxgvhug5Ig2BLQgUAdgnAHQgkAHgfgTQgfgRgNgjQgNglAPggIAnhUQhlhAhnhOIhBBBQgaAYglABQgmAAgbgXQgcgYgFgjQgIgnAVgdIA0hMQhbhThUhbIhMA0QgdAUglgHQgkgGgZgcQgXgbABglQAAgmAZgaIBAhBQhKhehFhtIhSAmQggAOgkgNQgjgLgSggQgTggAHgkQAIgmAcgUIBKg0Qg6htgwh1IhWAXQgjAIgigSQgfgTgNghQgMgjANgiQAMgjAhgRIBRgmQglh1gbh7IhZAHQgkACgdgYQgdgWgGglQgHgjATghQATggAjgKIBWgYQgQh9gFh6IhZgJQgkgDgZgdQgXgdAAgkQAAgjAXgdQAagdAjgDIBZgIQAFh7AQh9IhWgYQgjgKgTggQgTghAHgjQAGgkAdgXQAegZAjADIBZAIQAbh7Alh2IhRgmQgggQgNgjQgNgkAMghQANgiAfgTQAjgSAiAIIBWAXQAyh5A4hoIhKg1QgdgUgHgmQgGglASgfQARgfAkgMQAkgNAgAPIBSAlQBGhsBJhfIhAhBQgZgZAAgmQAAgmAXgbQAXgbAlgHQAmgGAcAUIBMA0QBThcBchTIg0hMQgVgeAIglQAFgkAcgYQAcgYAlABQAmAAAZAZIBBBBQBnhOBlhAIgnhUQgPggANgkQAMgjAggSQAggSAjAGQAmAHAVAdIA2BMQBug6BxgvIgXhaQgJgiATghQASghAigMQAigMAjANQAkANAPAgIAoBUQB3glB3gaIgHheQgDgjAZgeQAYgcAigGQAlgHAfATQAhATAKAjIAYBaQB0gPCCgGIAJheQADgjAegZQAcgYAjAAQAkAAAdAYQAdAZACAjIAJBeQCDAGB0APIAYhaQAKgjAggTQAggTAlAHQAjAGAXAcQAZAfgDAiIgIBeQB/AbBwAkIAohUQAQggAjgNQAigNAjAMQAiAMASAhQATAhgJAiIgYBaQB1AwBrA5IA2hMQAVgdAmgHQAjgHAgATQAgASAMAjQANAkgPAgIgnBUQBqBDBhBLIBChBQAZgZAmAAQAmAAAbAXQAcAYAGAkQAGAkgTAfIg1BMQBcBTBTBcIBMg0QAcgUAmAGQAlAHAXAbQAXAcAAAlQgBAngYAYIhABBQBPBmA/BlIBUglQAfgPAkANQAkANARAeQASAggHAkQgGAmgdAUIhKA1QA6BtAwB0IBWgXQAjgIAhASQAgASANAjQAMAhgNAkQgNAjggAQIhRAmQAlB2AbB7IBZgIQAjgDAeAZQAcAXAHAkQAGAkgSAgQgUAggiAKIhXAYQASB9AEB7IBZAIQAkADAYAdQAYAdAAAjQAAAkgYAdQgYAdgkADIhZAJQgEB6gSB9IBXAYQAiAJAUAhQASAhgGAjQgHAkgcAXQgdAYgkgCIhZgHQgbB7glB1IBRAmQAgAQANAkQANAigMAjQgNAiggASQggASgkgIIhWgXQguBwg8ByIBKA0QAcAUAHAmQAHAlgSAfQgRAfgkANQgkAMgfgOIhUgmQg/BmhPBlIBABBQAYAZABAnQAAAkgXAcQgXAcglAGQglAHgdgUIhMg0QhUBchbBSIA1BMQATAegGAmQgGAjgcAYQgbAXgmAAQgngBgYgYIhChBQhhBLhqBDIAnBUQAPAggNAlQgMAjggARQgfATgkgHQgmgHgVgdIg2hLQhrA4h1AwIAYBaQAJAigTAiQgTAgghAMQgjANgigNQgkgOgPggIgohUQh1Alh6AbIAIBdQADAjgZAeQgXAcgjAHQgkAGghgSQgggUgKgiIgYhbQh+ARh5AEIgJBeQgCAjgdAZQgdAYgkAAQgjAAgcgXg");
-	this.shape.setTransform(0,0.024,0.9611,0.9611);
+	this.shape.graphics.f("#C6C6C6").s().p("EgA/ArlQgegZgDgkIgJheQh6gEh9gRIgYBbQgKAiggAUQgiATgjgHQgkgHgXgbQgZgfADgjIAIheQh6gah1gmIgoBVQgPAhglANQgiANgjgNQgigMgSghQgSghAIgiIAXhaQhxgwhug5Ig3BLQgTAdgnAHQglAIgegTQgggSgNgjQgNglAPggIAmhVQhkg/hmhPIhDBBQgYAZgnABQgmAAgbgYQgcgXgFgkQgIgnAWgcIA0hNQhchThUhcIhLA1QgfAUglgHQgjgGgZgcQgXgcAAglQAAglAagbIBAhBQhLhehFhtIhSAmQghAOgkgNQgigMgSgfQgSghAFgkQAIgmAdgUIBJg0Qg5hugxh1IhWAYQgjAIghgTQgggSgNgiQgMgjANghQANgkAggRIBRgmQglh2gbh7IhZAIQglACgcgYQgdgXgGglQgHgiATgiQATggAjgKIBWgYQgPh+gGh6IhZgJQglgDgYgdQgYgdABgkQAAgjAXgdQAagdAjgDIBZgJQAGh6APh+IhWgYQgkgKgSggQgTghAHgjQAGgkAdgYQAdgZAkADIBZAJQAbh7Alh3IhRgmQgfgQgOgkQgMgjALgiQANgiAggSQAigTAiAIIBWAYQAyh6A4hoIhJg1QgegUgHgmQgFglASgfQARggAjgMQAkgNAhAPIBSAlQBGhsBKhfIhAhBQgagaAAgmQAAglAYgbQAWgcAlgHQAmgGAeAUIBKA0QBUhcBdhTIg0hMQgWgeAIgmQAFgkAcgXQAdgZAkABQAnAAAYAaIBDBBQBmhPBkg/IgmhVQgPggANgkQAMgkAhgSQAegSAlAHQAnAHATAdIA3BMQBug6BxgvIgXhbQgIgiASghQASghAigMQAigLAjAMQAlANAPAgIAoBVQB3gmB4gaIgIheQgDgjAZgeQAZgcAigHQAlgGAgATQAgATAKAjIAYBaQB0gPCDgGIAJhdQADgkAegaQAcgYAjAAQAkAAAdAYQAdAaACAkIAKBdQCCAGB1APIAYhaQAKgkAggSQAggTAlAGQAjAHAXAcQAaAfgDAiIgIBeQB/AcBwAkIAohVQARggAjgNQAigMAjALQAiAMASAhQATAhgJAiIgXBbQBzAwBsA5IA3hMQAUgeAmgGQAkgHAgASQAgATAMAjQANAkgPAgIgmBVQBqBDBgBLIBDhBQAYgaAnAAQAlAAAcAYQAcAXAGAkQAGAlgUAfIg1BMQBdBTBTBcIBLg0QAegUAmAGQAlAHAWAcQAXAcAAAkQAAAngZAZIhABBQBPBmBABlIBTglQAggPAlANQAjANARAfQASAfgGAlQgHAmgdAUIhKA1QA6BtAxB1IBVgYQAjgIAiATQAfARAOAjQALAigMAjQgOAkgfAQIhRAmQAlB3AbB7IBZgJQAkgDAdAZQAcAYAHAkQAHAkgTAgQgUAggiAKIhWAYQAQB+AFB6IBZAJQAkADAZAdQAYAdgBAjQABAkgYAdQgYAdglADIhZAJQgFB6gQB+IBWAYQAiAJAUAhQATAhgHAjQgHAkgcAYQgcAYglgCIhZgIQgbB7glB2IBRAmQAfAQAOAlQAMAhgLAjQgOAjgfARQghATgkgIIhVgYQgvBxg8ByIBKA0QAdAUAHAmQAGAmgSAfQgRAegjANQglANgggOIhTgmQhABmhPBlIBABBQAZAaAAAmQAAAlgXAcQgXAcgkAGQglAHgfgUIhLg1QhUBdhcBSIA1BNQAUAdgGAmQgGAkgcAXQgbAYgmAAQgngBgYgZIhDhBQhgBLhqBDIAmBVQAPAggNAlQgNAjgfASQgfATglgIQgngGgTgeIg3hLQhsA4hzAxIAXBaQAIAigSAhQgTAhghAMQgkANghgNQglgPgPgfIgohVQh1Amh6AaIAIBeQADAjgaAfQgXAbgjAHQgkAHghgTQgggUgKgiIgYhbQh+ARh5AEIgKBeQgCAjgdAaQgdAYgkAAQgjAAgcgYg");
+	this.shape.setTransform(0,0.025);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.disk, new cjs.Rectangle(-269.1,-269.6,538.2,539.3), null);
+}).prototype = getMCSymbolPrototype(lib.disk, new cjs.Rectangle(-280.7,-281.2,561.5,562.5), null);
 
 
 (lib.cog_small = function(mode,startPosition,loop,reversed) {
@@ -9431,7 +9431,7 @@ if (reversed == null) { reversed = false; }
 		const cogsOpenAnim = (areaColor) => {
 			this.mouseChildren = false;
 			gsap.to(this.cog_large, {alpha: 0, duration: 2.4, ease:Linear.easeOut});
-			gsap.to(this.innerDisk_mc, {alpha: 0, duration: 2, ease:Linear.easeOut, delay: 0.4});  
+			gsap.to(this.innerDisk_mc, {alpha: 0, duration: 2, ease:Linear.easeOut, delay: 1.4});  
 			
 			if (areaColor === "orange") {
 				animateAreaOrange();
@@ -9465,14 +9465,14 @@ if (reversed == null) { reversed = false; }
 			this.mouseChildren = false;
 			gsap.to(this.reset_mc, {alpha: 0});
 		
-			gsap.to(this.cog_large, {alpha: 1, duration: 1, ease:Linear.easeOut, delay: 3});
-			gsap.to(this.innerDisk_mc, {alpha: 1, duration: 2, ease:Linear.easeOut, delay: 1});
+			gsap.to(this.cog_large, {alpha: 1, duration: 1, ease:Linear.easeOut, delay: 2});
+			gsap.to(this.innerDisk_mc, {alpha: 1, duration: 2, ease:Linear.easeOut});
 		
 			orangeArea_tl.reverse();
 			tealArea_tl.reverse();
 			purpleArea_tl.reverse();
 		
-			gsap.to(this.innerWorkings, {alpha: 0, rotation: "-90", duration: 2.2, ease:Linear.easeOut, delay: 1}); 
+			gsap.to(this.innerWorkings, {alpha: 0, rotation: "-90", duration: 2.2, ease:Linear.easeOut}); 
 			gsap.to(this.innerWorkings.titles_mc, {alpha: 0, duration: 1.2, ease:Linear.easeOut, delay: 3});
 		
 			buttons.forEach((i) => { 
@@ -9480,6 +9480,7 @@ if (reversed == null) { reversed = false; }
 			});
 		
 			gsap.to("body", {delay: 1.4, onComplete: () => {
+				splitPieOpenTimeline.timeScale(2);
 				splitPieOpenTimeline.reverse();
 			}});
 		
@@ -9596,6 +9597,8 @@ if (reversed == null) { reversed = false; }
 				
 			//
 			cogsOpenAnim(this.data.areaColor); 
+		
+			splitPieOpenTimeline.timeScale(1);
 			splitPieOpenTimeline.play();
 		
 			//
