@@ -3582,52 +3582,6 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.ringOrange_mc, new cjs.Rectangle(-242.8,-242.8,485.70000000000005,485.70000000000005), null);
 
 
-(lib.rewind_mc = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Layer_2
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#999999").s().p("AgPBUIAAiMIg3AAIAAgbICNAAIAAAbIg3AAIAACMg");
-	this.shape.setTransform(32.325,0.25);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#999999").s().p("Ag+BUIAAinIB6AAIAAAaIhaAAIAAAsIBQAAIAAAZIhQAAIAAAuIBdAAIAAAag");
-	this.shape_1.setTransform(17.6,0.25);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#999999").s().p("AgmBRQgRgGgLgJIAKgYQAYATAggBQAlAAAAgVQgBgMgQgGQgEgDgdgHQgXgGgLgHQgPgMAAgVQAAgWAQgOQASgOAgAAQAhAAAXAOIgKAZQgXgNgXAAQgkgBAAAXQAAAMAQAGIAiAJQAXAHAKAHQAQAMAAAUQAAAWgRANQgSAPggABQgTgBgTgFg");
-	this.shape_2.setTransform(1.55,0.25);
-
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#999999").s().p("Ag+BUIAAinIB5AAIAAAaIhaAAIAAAsIBQAAIAAAZIhQAAIAAAuIBeAAIAAAag");
-	this.shape_3.setTransform(-13.5,0.25);
-
-	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f("#999999").s().p("AAmBUIgigxIgGAAIglAAIAAAxIggAAIAAinIBFAAQAhAAATAQQATAQAAAcQAAAmgkAOIAnA3gAgnAJIAkAAQAoAAAAggQAAgigoABIgkAAg");
-	this.shape_4.setTransform(-30.125,0.25);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	// Layer_1
-	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.f("rgba(51,51,51,0)").s().p("AoRClIAAlJIQjAAIAAFJg");
-	this.shape_5.setTransform(0.025,0);
-
-	this.timeline.addTween(cjs.Tween.get(this.shape_5).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.rewind_mc, new cjs.Rectangle(-52.9,-16.6,105.9,33.3), null);
-
-
 (lib.purpleCircle_mc = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -8407,6 +8361,30 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.cog_large, new cjs.Rectangle(-317.2,-317.1,634.4,634.3), null);
 
 
+(lib.circulararrow = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// circular_arrow_svgrepo_com_svg
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#999999").s().p("AEfd9QD5gCDthBIB5G7QknBQkzADgAPUb1QDmhcDGiUIERFxQj1C3kdBygAYoV6QC2irCDjPIGED1QikEDjgDRgAfLNBQBsjfAvjyIHDBXQg7EtiFEVgA+QJUIqztNQgYgeAKgVQAKgUAmAAIH8AAIAGgtQAJg3ALg1IACgKQAMhAAPg3IABAAQAgh8A0iFIgBgBQBvkeC0j3IABAAQBRhuBahjIgBgBQDQjjEAilIABABQBuhIB9g+IgBgBQDchtDug9IAHgCQBHgSAogIQB/gaCMgMIAAgBIBkgGQA0gDAqAAIAZAAIBgACIAhACIBJAGIAfACIBcALIA+AKIAAAAQCGAXCDAlIAAAAIBaAcQBgAgBdAoIAQAHQBkAsBXAwIAWANIA1AfIAAAAQB3BHBpBRIAAAAIA3ArQAsAkAeAaIATASIBBA8IAJAJIACABQBwBvBgB7IlqEaQhPhmhjhfQgugsgYgVIgTgQQgigeglgcQhehJhhg7Ih1hAQgqgVgugVIjvhXQh3gjh9gTIgYgEIhMgJIhvgIQgmgCgmAAIgWAAIhKACIgOABQkIAOj4BUQjzBTjUCPIgEADQhUA5hNBBIgyAsIgFAEQjPC+iRDvQiTD0hGETQgLAtgIAmIAAAAIgLBBIHLAAQAmAAAJAVQAKAVgYAdIqzNNQgYAdgiAAQgiAAgZgdgEAiDACXQAGhLAAhMQAAirgeinIHEhRQAlDQAADTQAABegHBdgAdxvmIGHjvQChEFBXEmIm3CEQhHjsiBjUg");
+	this.shape.setTransform(264.4508,237.625);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0.1,528.9,475.09999999999997);
+
+
 (lib.Group_1 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -8483,6 +8461,33 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = getMCSymbolPrototype(lib.thePie_mc, new cjs.Rectangle(-332.6,-332.6,665.3,665.3), null);
+
+
+(lib.reset_mc = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_2
+	this.instance = new lib.circulararrow("synched",0);
+	this.instance.setTransform(0,-0.05,0.0837,0.0837,0,0,0,264.1,236.6);
+
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FF9900").s().p("AkFD/IAAn9IILAAIAAH9g");
+	this.shape.setTransform(1.925,0);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.shape}]},3).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-24.2,-25.5,52.3,51);
 
 
 (lib.optionsTeal_mc = function(mode,startPosition,loop,reversed) {
@@ -9378,6 +9383,8 @@ if (reversed == null) { reversed = false; }
 		const tealArea_tl = gsap.timeline({paused: true});
 		const purpleArea_tl = gsap.timeline({paused: true});
 		
+		this.reset_mc.alpha = 0;
+		
 		
 		////////////////////////////////////////////////////////////////////////////////////////
 		// SETUP
@@ -9402,7 +9409,7 @@ if (reversed == null) { reversed = false; }
 		
 		
 		////////////////////////////////////////////////////////////////////////////////////////
-		// RUNTIME
+		// RUNTIME FUNCTIONS
 		////////////////////////////////////////////////////////////////////////////////////////
 		
 		/* Rotate continuously animation - Default starting */
@@ -9411,7 +9418,6 @@ if (reversed == null) { reversed = false; }
 				Add cog timelines to master timeline - 
 				starting at the same time
 			*/
-		
 			cogsDefaultTimeline.add(cog_small_tl, 0);
 			cogsDefaultTimeline.add(cog_medium_tl, 0);
 			cogsDefaultTimeline.add(cog_large_tl, 0);
@@ -9423,6 +9429,7 @@ if (reversed == null) { reversed = false; }
 		   
 		/* Coggs opening anim */
 		const cogsOpenAnim = (areaColor) => {
+			this.thePie_mc.mouseChildren = false;
 			gsap.to(this.cog_large, {alpha: 0, duration: 1.8, ease:Linear.easeOut});
 			gsap.to(this.innerDisk_mc, {alpha: 0, duration: 2, ease:Linear.easeOut, delay: 1});  
 			
@@ -9443,10 +9450,46 @@ if (reversed == null) { reversed = false; }
 			gsap.to(this.innerWorkings, {alpha: 1, rotation: "90", duration: 2.2, ease:Linear.in, delay: 1}); 
 			gsap.to(this.innerWorkings.titles_mc, {alpha: 1, duration: 1.2, ease:Linear.easeOut, delay: 3});
 		
-			buttons.forEach((i, j) => { 
-				gsap.to(this[i], {alpha: 0, duration: 1.2, ease:Linear.easeOut, delay: 1});
+			gsap.to(this.reset_mc, {alpha: 1, delay: 3.5});
+			
+			toggleTitleDescription();
+		};
+		
+		   
+		/* Coggs closing anim */
+		const cogsCloseAnim = () => {
+			this.mouseChildren = false;
+			gsap.to(this.reset_mc, {alpha: 0});
+		
+			gsap.to(this.cog_large, {alpha: 1, duration: 1.8, ease:Linear.easeOut, delay: 3});
+			gsap.to(this.innerDisk_mc, {alpha: 1, duration: 2, ease:Linear.easeOut, delay: 1});
+		
+			orangeArea_tl.reverse();
+			tealArea_tl.reverse();
+			purpleArea_tl.reverse();
+		
+			gsap.to(this.innerWorkings, {alpha: 0, rotation: "-90", duration: 2.2, ease:Linear.easeOut, delay: 1}); 
+			gsap.to(this.innerWorkings.titles_mc, {alpha: 0, duration: 1.2, ease:Linear.easeOut, delay: 3});
+		
+			buttons.forEach((i) => { 
+				gsap.to(this[i], {alpha: 1, duration: 1.2, ease:Linear.easeIn, delay: 1});
 			});
 		
+			gsap.to("body", {delay: 2, onComplete: () => {
+				splitPieOpenTimeline.reverse();
+			}});
+		
+			gsap.to("body", {delay: 5, onComplete: () => {
+				this.thePie_mc.mouseChildren = true;
+				this.mouseChildren = true;
+			}});
+		
+			gsap.to("#instructions_panel", {"right": '-350px'});
+			gsap.to(this.cog_small, {alpha: 1, delay: 2});
+				
+			toggleSmallCogsTimelines("play");
+			
+			toggleTitleDescription();
 		};
 		
 		   
@@ -9486,6 +9529,27 @@ if (reversed == null) { reversed = false; }
 		};
 		
 		
+		/**/
+		function toggleSmallCogsTimelines(toggle) {
+			switch (toggle) {
+				case "pause":
+					//
+					gsap.to("body", {delay: 2.6, onComplete: () => {
+						cog_small_tl.pause();
+						cog_medium_tl.pause();
+					}});
+					break;
+				case "play":
+					//
+					cog_small_tl.resume();
+					cog_medium_tl.resume();
+				default:
+					break;	
+			}
+			
+		}
+		
+		
 		////////////////////////////////////////////////////////////////////////////////////////
 		// UTILITY FUNCTIONS 
 		////////////////////////////////////////////////////////////////////////////////////////
@@ -9499,8 +9563,6 @@ if (reversed == null) { reversed = false; }
 			buttons.forEach((i) => {
 				tempButtons.push(i);
 			});
-			
-			tempButtons.splice(index, 1);
 		
 			backArraySection = tempButtons.splice(index, tempButtons.length);
 		
@@ -9513,6 +9575,7 @@ if (reversed == null) { reversed = false; }
 		////////////////////////////////////////////////////////////////////////////////////////
 		
 		function clickHandler() {
+			splitPieOpenTimeline.clear();
 			// rotation to which other slices rotate to
 			let rotation = this.data.rotation;
 			// find the index for slice clicked
@@ -9527,26 +9590,21 @@ if (reversed == null) { reversed = false; }
 					splitPieOpenTimeline.add(gsap.to(this.parent[i], {
 						rotation: "-=40", duration: 0.5, alpha: 0, ease: "power3.in"
 					}), "-=0.3");
-					
-					//
-					cogsOpenAnim(this.data.areaColor); 
-					splitPieOpenTimeline.play();
-		
-					//
-					gsap.to(this, {alpha: 0, delay: 2});    
-					gsap.to(this.parent.parent["cog_small"], {alpha: 0, delay: 2});
-														 
-					//
-					gsap.to("body", {delay: 2.6, onComplete: () => {
-						cog_small_tl.pause();
-						cog_medium_tl.pause();
-					}});
-				
-					// in index.html
-					setTitleText(this.data.areaColor);
-					toggleTitleDescription();
 				}
 			});
+				
+			//
+			cogsOpenAnim(this.data.areaColor); 
+			splitPieOpenTimeline.play();
+		
+			//
+			gsap.to(this, {alpha: 0, delay: 2});    
+			gsap.to(this.parent.parent["cog_small"], {alpha: 0, delay: 2});
+		
+			toggleSmallCogsTimelines("pause");
+		
+			// in index.html
+			setTitleText(this.data.areaColor);
 		}                   
 		
 		
@@ -9555,9 +9613,8 @@ if (reversed == null) { reversed = false; }
 		////////////////////////////////////////////////////////////////////////////////////////
 		
 		/* Mouse Click Handlers */
-		
 		buttons.forEach((i, j) => { 
-		    this.thePie_mc[i].addEventListener("click", clickHandler.bind(this.thePie_mc[i]));
+			this.thePie_mc[i].addEventListener("click", clickHandler.bind(this.thePie_mc[i]));
 			this.thePie_mc[i].data = {
 					areaColor: areaColors[j],
 					rotation: j * 40
@@ -9565,27 +9622,28 @@ if (reversed == null) { reversed = false; }
 		});
 		
 		
+		
 		/*  */
 		playCogsDefaultAnim();
 		
 		/*  */
-		this.rewind_mc.addEventListener("click", resetHandler);
+		this.reset_mc.addEventListener("click", resetHandler.bind(this.reset_mc));
 		
 		function resetHandler() {
-			orangeArea_tl.reverse();
-			cogsDefaultTimeline.reverse();
+			cogsCloseAnim();
 		}
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
-	// Layer_1
-	this.rewind_mc = new lib.rewind_mc();
-	this.rewind_mc.name = "rewind_mc";
-	this.rewind_mc.setTransform(831.65,51.15);
+	// Reset_btn
+	this.reset_mc = new lib.reset_mc();
+	this.reset_mc.name = "reset_mc";
+	this.reset_mc.setTransform(615.9,618.25);
+	new cjs.ButtonHelper(this.reset_mc, 0, 1, 2, false, new lib.reset_mc(), 3);
 
-	this.timeline.addTween(cjs.Tween.get(this.rewind_mc).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.reset_mc).wait(1));
 
 	// optionsOrange_mc
 	this.optionsOrange_mc = new lib.optionsOrange_mc();
@@ -9685,7 +9743,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(365.3,365.3,519.4000000000001,379.40000000000003);
+p.nominalBounds = new cjs.Rectangle(365.3,365.3,379.40000000000003,379.40000000000003);
 // library properties:
 lib.properties = {
 	id: '1392B8D961C3473EADEDBB5D2A770B98',

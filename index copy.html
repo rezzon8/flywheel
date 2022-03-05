@@ -30,7 +30,12 @@
         exportRoot,
         anim_container,
         dom_overlay_container,
-        fnStartAnimation;
+        fnStartAnimation,
+        flywheelTitle,
+        flywheelDescription,
+        instructionsHeader,
+        instructionsContent,
+        instructionsFooter;
 
       function init() {
         canvas = document.getElementById("canvas");
@@ -42,6 +47,11 @@
         var lib = comp.getLibrary();
         handleComplete({}, comp);
 
+        flywheelTitle = document.querySelector("#flywheel > h1:first-child");
+        flywheelDescription = document.querySelector("#description_text_block");
+        instructionsHeader = document.querySelector("#instructions_panel > header");
+        instructionsContent = document.querySelector("#instructions_panel > article");
+        instructionsFooter = document.querySelector("#instructions_panel > footer");
       }
 
       function handleComplete(evt, comp) {
@@ -66,20 +76,14 @@
         fnStartAnimation();
       }
 
-			async function animateArea(areaColor, areaSlice = "start", contentIndex = 0) {
-				var flywheelTitle = document.querySelector("#flywheel > h1:first-child");
-				var flywheelDescription = document.querySelector("#description_text_block");
-				var instructionsHeader = document.querySelector("#instructions_panel > header");
-				var instructionsContent = document.querySelector("#instructions_panel > article");
-				var instructionsFooter = document.querySelector("#instructions_panel > footer");
-				
+			async function animateArea(areaColor, areaSection = "start", contentIndex = 0) {
 				await fetch('./data.json').then(response => {
 					return response.json();
 				}).then(data => {
-          instructionsContent.innerHTML = data[0].content[areaColor][areaSlice][contentIndex].copy; // set instructions content
           instructionsContent.scrollTop = 0 // scroll to top of content on change
           instructionsHeader.style.backgroundColor = data[0].areaColors[areaColor]; // set instructions header color
-          instructionsFooter.innerHTML = `<a href="${data[0].content[areaColor][areaSlice][contentIndex].link}" style="background-color: ${data[0].areaColors[areaColor]}" class="read-more">Read more</a>`; // set footer 
+          instructionsContent.innerHTML = data[0].content[areaColor][areaSection][contentIndex].copy; // set instructions content
+          instructionsFooter.innerHTML = `<a target="_blank" href="${data[0].content[areaColor][areaSection][contentIndex].link}" style="background-color: ${data[0].areaColors[areaColor]}" class="read-more">Read more</a>`; // set footer 
 				}).catch(err => {
 					// Do something for an error here
 				});
@@ -87,25 +91,24 @@
 				gsap.to("#instructions_panel", {"right": '0'});
 			}
 
-			async function setTitleText(areaColor) {
-				var flywheelTitle = document.querySelector("#flywheel > h1:first-child");
-				
+			async function setTitleText(areaColor) {				
 				await fetch('./data.json').then(response => {
 					return response.json();
 				}).then(data => {
 					flywheelTitle.innerHTML = data[0].titles[areaColor]; // set page page title
-					toggleTitleDescription();
 				}).catch(err => {
 					// Do something for an error here
 				});
 			}
 
 			function toggleTitleDescription() {
-				var flywheelTitle = document.querySelector("#flywheel > h1:first-child");
-				var flywheelDescription = document.querySelector("#description_text_block");
-				
-				gsap.to(flywheelDescription, {"alpha": 0}); // hide flywheel description
-				gsap.to(flywheelTitle, {alpha: 1}); // show flywheel title
+        if (gsap.getProperty(flywheelDescription, "alpha") === 1) {
+          gsap.to(flywheelDescription, {"alpha": 0});
+          gsap.to(flywheelTitle, {"alpha": 1});
+        } else {
+          gsap.to(flywheelDescription, {"alpha": 1, "delay": 4});
+          gsap.to(flywheelTitle, {"alpha": 0});
+        }
 			}
     </script>
     <!-- write your code here -->
