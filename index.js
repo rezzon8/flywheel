@@ -9431,7 +9431,7 @@ if (reversed == null) { reversed = false; }
 		const cogsOpenAnim = (areaColor) => {
 			this.mouseChildren = false;
 			gsap.to(this.cog_large, {alpha: 0, duration: 2.4, ease:Linear.easeOut});
-			gsap.to(this.innerDisk_mc, {alpha: 0, duration: 2, ease:Linear.easeOut, delay: 1});  
+			gsap.to(this.innerDisk_mc, {alpha: 0, duration: 2, ease:Linear.easeOut, delay: 0.4});  
 			
 			if (areaColor === "orange") {
 				animateAreaOrange();
@@ -9479,7 +9479,7 @@ if (reversed == null) { reversed = false; }
 				gsap.to(this[i], {alpha: 1, duration: 1.2, ease:Linear.easeIn, delay: 1});
 			});
 		
-			gsap.to("body", {delay: 1.3, onComplete: () => {
+			gsap.to("body", {delay: 1.4, onComplete: () => {
 				splitPieOpenTimeline.reverse();
 			}});
 		
@@ -9588,12 +9588,10 @@ if (reversed == null) { reversed = false; }
 			
 			// loop new array and animate all other slices
 			buttonsSplice.forEach((i, j) => {
-				if (this.data.areaColor === "orange" || this.data.areaColor === "teal" || this.data.areaColor === "purple") {
-					// 
-					splitPieOpenTimeline.add(gsap.to(this.parent[i], {
-						rotation: "-=40", duration: 0.5, alpha: 0, ease: "power3.in"
-					}), "-=0.3");
-				}
+				// 
+				splitPieOpenTimeline.add(gsap.to(this.parent[i], {
+					rotation: "-=40", duration: 0.5, alpha: 0, ease: "power3.in"
+				}), "-=0.3");
 			});
 				
 			//
