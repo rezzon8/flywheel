@@ -38,6 +38,16 @@
         instructionsFooter,
 				state;
 
+				fetch('./data.json').then(response => {
+					return response.json();
+				}).then(data => {
+          localStorage.clear();
+          localStorage.setItem("state", JSON.stringify(data)); 
+          state = JSON.parse(localStorage.getItem("state")); 
+				}).catch(err => {
+					// Do something for an error here
+				});
+
       function init() {
         canvas = document.getElementById("canvas");
         anim_container = document.getElementById("animation_container");
@@ -79,29 +89,16 @@
       }
 
 			async function animateArea(areaColor, areaSection = "start", contentIndex = 0) {
-				await fetch('./data.json').then(response => {
-					return response.json();
-				}).then(data => {
-					state = data;
-          instructionsContent.scrollTop = 0 // scroll to top of content on change
-          instructionsHeader.style.backgroundColor = data[0].areaColors[areaColor]; // set instructions header color
-          instructionsContent.innerHTML = data[0].content[areaColor][areaSection][contentIndex].copy; // set instructions content
-          instructionsFooter.innerHTML = `<a target="_blank" href="${data[0].content[areaColor][areaSection][contentIndex].link}" style="background-color: ${data[0].areaColors[areaColor]}" class="read-more">Read more</a>`; // set footer 
-				}).catch(err => {
-					// Do something for an error here
-				});
+        instructionsContent.scrollTop = 0 // scroll to top of content on change
+        instructionsHeader.style.backgroundColor = state[0].areaColors[areaColor]; // set instructions header color
+        instructionsContent.innerHTML = state[0].content[areaColor][areaSection][contentIndex].copy; // set instructions content
+        instructionsFooter.innerHTML = `<a target="_blank" href="${state[0].content[areaColor][areaSection][contentIndex].link}" style="background-color: ${state[0].areaColors[areaColor]}" class="read-more">Read more</a>`; // set footer 
 				
 				gsap.to("#instructions_panel", {"right": '0'});
 			}
 
-			async function setTitleText(areaColor) {				
-				await fetch('./data.json').then(response => {
-					return response.json();
-				}).then(data => {
-					flywheelTitle.innerHTML = data[0].titles[areaColor]; // set page page title
-				}).catch(err => {
-					// Do something for an error here
-				});
+			async function setTitleText(areaColor) {		
+					flywheelTitle.innerHTML = state[0].titles[areaColor]; // set page page title
 			}
 
 			function toggleTitleDescription() {
