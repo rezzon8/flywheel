@@ -6459,7 +6459,7 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape_23 = new cjs.Shape();
-	this.shape_23.graphics.f("#CDCDCD").s().p("A0PAcQhSnOBRnQMApJAHNMgkLAU4QjrmXhSnQg");
+	this.shape_23.graphics.f("#C5C5C5").s().p("A0PAcQhSnOBRnQMApJAHNMgkLAU4QjrmXhSnQg");
 	this.shape_23.setTransform(147.8624,92.3);
 
 	this.shape_24 = new cjs.Shape();
@@ -6602,7 +6602,7 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape_27 = new cjs.Shape();
-	this.shape_27.graphics.f("#DDDDDD").s().p("A0jIvQBSnPDqmXQDrmYFpkvIa3f9g");
+	this.shape_27.graphics.f("#CFCFCF").s().p("A0kIvQBSnQDrmWQDrmYFokvIa5f9g");
 	this.shape_27.setTransform(145.6,113.1);
 
 	this.shape_28 = new cjs.Shape();
